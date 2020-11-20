@@ -995,7 +995,8 @@ a .mobile-menu-link {
     margin: initial;
     color: #2C49A4;
     font-size: 21px;
-    font-family: Proxima Nova Regular; }
+    font-family: Proxima Nova Regular;
+    line-height: initial; }
   .accordion-heading .pointer {
     width: 15px;
     height: 45px;
@@ -1236,3 +1237,76 @@ a .mobile-menu-link {
         line-height: 40px; } }
   .card-slider--text p {
     color: #ffffff; }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap; }
+  .tabs label {
+    order: initial;
+    display: block;
+    padding: 16px;
+    cursor: pointer;
+    background: #F7F7F7;
+    transition: background ease 0.2s;
+    position: relative;
+    color: #2C49A4;
+    font-size: 21px;
+    font-family: Proxima Nova Regular;
+    line-height: initial;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem; }
+    @media (min-width: 576px) {
+      .tabs label {
+        width: auto;
+        order: 1;
+        border-bottom: 1px solid #F7F7F7;
+        background: #ffffff;
+        margin: 0px 30px 40px 0px; } }
+    .tabs label .pointer {
+      width: 15px;
+      height: 45px;
+      background: url("/images/icons/pointer-down.svg") no-repeat center center;
+      display: block;
+      float: right;
+      position: absolute;
+      right: 16px;
+      top: 5px; }
+      @media (min-width: 576px) {
+        .tabs label .pointer {
+          display: none; } }
+  .tabs .tab {
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 0px 16px 16px 20px;
+    background: #F7F7F7;
+    order: initial; }
+    @media (min-width: 576px) {
+      .tabs .tab {
+        order: 99;
+        background: #ffffff;
+        padding: 16px 0px; } }
+    .tabs .tab h3 {
+      color: #2C49A4; }
+    .tabs .tab:before {
+      content: "";
+      width: 100px;
+      height: 3px;
+      background: #FFAC5F;
+      display: block;
+      margin-bottom: 30px; }
+      @media (min-width: 576px) {
+        .tabs .tab:before {
+          display: none; } }
+  .tabs input[type="radio"] {
+    display: none; }
+  @media (min-width: 576px) {
+    .tabs input[type="radio"]:checked + label {
+      border-bottom: 1px solid #FFAC5F;
+      background: #F7F7F7;
+      color: #000000; } }
+  .tabs input[type="radio"]:checked + label .pointer {
+    background: url("/images/icons/pointer-up.svg") no-repeat center center; }
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block; }
