@@ -358,6 +358,52 @@ a - applies the spacing for the property in all directions
 .mr-5 {
   margin-right: 48px !important; }
 
+.px-6 {
+  padding-left: 80px !important;
+  padding-right: 80px !important; }
+
+.py-6 {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important; }
+
+.pa-6 {
+  padding: 80px 80px !important; }
+
+.pt-6 {
+  padding-top: 80px !important; }
+
+.pb-6 {
+  padding-bottom: 80px !important; }
+
+.pl-6 {
+  padding-left: 80px !important; }
+
+.pr-6 {
+  padding-right: 80px !important; }
+
+.mx-6 {
+  margin-left: 80px !important;
+  margin-right: 80px !important; }
+
+.my-6 {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important; }
+
+.ma-6 {
+  margin: 80px 80px !important; }
+
+.mt-6 {
+  margin-top: 80px !important; }
+
+.mb-6 {
+  margin-bottom: 80px !important; }
+
+.ml-6 {
+  margin-left: 80px !important; }
+
+.mr-6 {
+  margin-right: 80px !important; }
+
 body {
   font-size: 16px;
   font-family: Proxima Nova Regular;
@@ -478,6 +524,21 @@ a {
 .flex {
   display: flex;
   flex-flow: wrap; }
+
+.image-caption {
+  font-family: "Proxima Nova Regular";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 29px;
+  text-align: center;
+  color: #1D3557; }
+
+.full-width {
+  margin: 0 calc((100% - 100vw)/2);
+  max-width: none;
+  overflow: auto;
+  width: 100vw; }
 
 h1 {
   font-family: Chronicle Display Light;
@@ -1310,3 +1371,74 @@ a .mobile-menu-link {
     background: url("/images/icons/pointer-up.svg") no-repeat center center; }
   .tabs input[type="radio"]:checked + label + .tab {
     display: block; }
+
+.card-three-column h2 {
+  color: #1D3557; }
+
+.card-three-column--text {
+  padding: 20px;
+  margin: -50px 0px 60px 0px;
+  color: #ffffff;
+  background: #1D3557;
+  position: relative; }
+  .card-three-column--text p {
+    color: #ffffff; }
+  @media (min-width: 576px) {
+    .card-three-column--text {
+      margin: 0px 0px 0px -50px; } }
+  @media (min-width: 992px) {
+    .card-three-column--text {
+      margin: -50px 20px 0px 20px; } }
+
+.card-three-column--image img {
+  width: 100%; }
+
+@media (min-width: 576px) {
+  .card-three-column--image {
+    width: 70%; } }
+
+@media (min-width: 992px) {
+  .card-three-column--image {
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  .card-three-column--row.container {
+    width: auto;
+    margin: initial;
+    padding: initial;
+    max-width: none; } }
+
+.card-three-column .card-column {
+  flex: 1 0 100%; }
+  @media (max-width: 575px) {
+    .card-three-column .card-column.container {
+      width: auto;
+      margin: initial;
+      padding: initial; } }
+  @media (min-width: 992px) {
+    .card-three-column .card-column.container {
+      width: auto;
+      margin: 0px 20px 0px 0px;
+      padding: initial; } }
+  @media (min-width: 992px) {
+    .card-three-column .card-column.container.col-3 {
+      margin: 0px; } }
+  @media (min-width: 576px) {
+    .card-three-column .card-column {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px; } }
+  @media (min-width: 992px) {
+    .card-three-column .card-column {
+      flex: 1 0 30%;
+      display: block; } }
+  @media (min-width: 576px) {
+    .card-three-column .card-column .column {
+      width: 40%;
+      max-width: none;
+      padding: initial;
+      margin: initial;
+      float: right; } }
+  @media (min-width: 992px) {
+    .card-three-column .card-column .column {
+      width: 100%; } }

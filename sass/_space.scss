@@ -25,8 +25,9 @@ $two: unquote( ( $spacer * 0.5  ) + 'px' );
 $three: unquote( ( $spacer ) + 'px' );
 $four: unquote( ( $spacer * 1.5 ) + 'px' );
 $five: unquote( ( $spacer * 3 ) + 'px' );
+$six: unquote( ( $spacer * 5 ) + 'px' );
 
-$spaces: ($zero, $one, $two, $three, $four, $five); // Adjust this to include the pixel amounts you need.
+$spaces: ($zero, $one, $two, $three, $four, $five, $six); // Adjust this to include the pixel amounts you need.
 $sides: (x, y, all, top, bottom, left, right); // Leave this variable alone
 $i: 0;
 @each $space in $spaces {

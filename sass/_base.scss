@@ -132,8 +132,24 @@ a {
   @include make-container();
 }
 
-
 .flex {
   display: flex;
   flex-flow: wrap;
+}
+
+.image-caption {
+  font-family: "Proxima Nova Regular";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 29px;
+  text-align: center;
+  color: $prussian;
+}
+
+.full-width {
+  margin: 0 calc((100% - 100vw)/2);
+  max-width: none;
+  overflow: auto;
+  width: 100vw;
 }
