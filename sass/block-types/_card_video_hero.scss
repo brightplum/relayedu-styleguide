@@ -1,0 +1,78 @@
+.card-video-hero {
+  position: relative;
+  overflow: hidden;
+
+  &--image {
+    margin: 0px 15px;
+    position: relative;
+    z-index: 3;
+
+    @include respond-above(md) {
+      width: 70%;
+      z-index: 2;
+      position: absolute;
+    }
+  }
+
+  &--text {
+    padding: 60px 45px 45px 45px;
+    margin-top: -30px;
+    letter-spacing: 0.315px;
+    line-height: 34px;
+    position: relative;
+    z-index: 2;
+
+    p {
+      color: $white;
+    }
+
+    @include respond-above(md) {
+      width: 40%;
+      z-index: 3;
+      float: right;
+      margin-top: 160px;
+      padding: 60px 30px 65px 30px;
+    }
+
+    @include respond-above(lg) {
+      min-height: 400px;
+      margin-top: 20%;
+    }
+  }
+
+  &--decoration-top {
+    display: none;
+    position: absolute;
+    right: 125px;
+
+    @include respond-above(md) {
+      display: block;
+    }
+  }
+
+  &--decoration-button {
+    margin-top: -45px;
+    float: right;
+    width: 30%;
+    position: relative;
+
+    @include respond-above(md) {
+      position: absolute;
+      bottom: 10px;
+      right: 200px;
+    }
+
+    .path-first {
+      bottom: 2px;
+      float: left;
+      width: 20px;
+      position: absolute;
+      left: -20px;
+
+      @include respond-above(md) {
+        bottom: 180px;
+        width: 40px;
+      }
+    }
+  }
+}
