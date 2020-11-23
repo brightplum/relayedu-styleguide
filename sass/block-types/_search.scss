@@ -1,0 +1,17 @@
+.search {
+  input {
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 3px;
+    border: none;
+    background: $light-blue;
+    color: $pacific;
+    font-style: italic;
+    width: 100%;
+    font-family: Chronicle Display;
+  }
+  ::placeholder {
+    color: $pacific;
+    opacity: 0.69;
+  }
+}
