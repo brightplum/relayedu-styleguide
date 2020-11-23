@@ -1,4 +1,4 @@
-.card-video-hero {
+.card-video-hero{
   position: relative;
   overflow: hidden;
 
@@ -13,23 +13,34 @@
       position: absolute;
     }
   }
+  
+  &--header{
+    color: $pacific;
+    line-height: 110%;
+    position:relative;
+    font-size:50px;
+    font-weight:300;
+  }
 
   &--text {
-    padding: 60px 45px 45px 45px;
-    margin-top: -30px;
+    padding: 18px 58px 121px 44px;
+    height:248px;
+    display: block;
+    margin-bottom: -30px;
     letter-spacing: 0.315px;
     line-height: 34px;
     position: relative;
-    z-index: 2;
-
-    p {
+    z-index: 1;
+    
+    h3 {
       color: $white;
+      font-size:50px;  
     }
 
     @include respond-above(md) {
       width: 40%;
       z-index: 3;
-      float: right;
+      float: left;
       margin-top: 160px;
       padding: 60px 30px 65px 30px;
     }
