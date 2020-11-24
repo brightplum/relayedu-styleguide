@@ -12,11 +12,13 @@
 @import 'lists';
 @import 'navigation/primary';
 @import 'navigation/secondary';
-@import 'footer.scss';
-@import 'colors.scss';
+@import 'footer';
+@import 'colors';
 @import "block-types/card_image";
+@import "block-types/card_video_hero";
 @import "block-types/accordion";
 @import "block-types/callout";
 @import "block-types/block_two";
 @import "block-types/block_quote";
 @import "block-types/slider";
+@import "block-types/programs";
