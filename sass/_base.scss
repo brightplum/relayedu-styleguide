@@ -4,7 +4,7 @@ body {
   color: rgb(88,89,91);
 }
 
-a {
+.link {
   &:hover {
     color: #d9d9d9;
   }
@@ -74,7 +74,7 @@ p {
   color:  black;
 }
 
-ul {
+.bullets {
   li {
     font-size: 21px;
     line-height: 38px;
@@ -92,7 +92,7 @@ ul {
   }
 }
 
-a {
+.link {
   color: $crimson;
   font-size: 1.3em;
   line-height: 34px;
@@ -154,7 +154,6 @@ a {
   overflow: auto;
   width: 100vw;
 }
-
 
 .main {
   position: relative;

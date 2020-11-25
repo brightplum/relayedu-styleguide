@@ -3,6 +3,7 @@
 @import "reset";
 @import "breakpoints";
 @import "space";
+@import 'colors.scss';
 @import "icons";
 @import 'base';
 @import 'headings';
@@ -14,7 +15,7 @@
 @import 'navigation/primary';
 @import 'navigation/secondary';
 @import 'footer.scss';
-@import 'colors.scss';
+@import 'paragraphs.scss';
 @import "block-types/card_image";
 @import "block-types/accordion";
 @import "block-types/callout";

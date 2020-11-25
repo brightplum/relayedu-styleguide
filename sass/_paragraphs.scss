@@ -1,0 +1,10 @@
+.paragraph {
+
+  a {
+    @extend .link;
+  }
+
+  ul {
+    @extend .bullets;
+  }
+}
