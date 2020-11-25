@@ -1,6 +1,19 @@
 .select-state {
-    padding: 34px 43px 60px 42px;
     
+    &--content-container {
+        padding: 34px 43px 60px 42px;
+    }
+    
+    &--header-container {
+        display: flex;
+        background-image: url("../images/atlanta-cityscape-mobile.png");
+        background-repeat: no-repeat;
+        background-size:100% auto;
+        padding:0;
+        height:0;
+        padding-bottom:427px;       
+    }
+
     button{
         display:block;
         margin:0 auto;
@@ -11,6 +24,35 @@
     p{
         margin-bottom: 21px;
     }
+   
+    &--image-header {
+        font-family: "Proxima Nova Regular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 31px;
+        text-transform: uppercase;
+        align-self: flex-end;
+        &:after{
+            content: "";
+            display: block; 
+            position:relative;
+            width: 63px;
+            padding-top: 6px;
+            border-bottom: 1px solid #ffac5f;
+        }
+    }  
+
+    &--header{
+        font-family: "Chronicle Display Light", serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 55px;
+    
+    }
+
+    
 
     &--dropdown-container {
         width:290px;
