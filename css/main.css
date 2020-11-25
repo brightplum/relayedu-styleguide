@@ -532,6 +532,8 @@ a {
 .flex {
   display: flex;
   flex-flow: wrap; }
+  .flex.justify-center {
+    justify-content: center; }
 
 .image-caption {
   font-family: "Proxima Nova Regular";
@@ -1468,3 +1470,92 @@ h6 {
 .search ::placeholder {
   color: #2C49A4;
   opacity: 0.69; }
+
+@media (min-width: 576px) {
+  .quote-image .quote-wrapper {
+    flex-flow: initial; } }
+
+.quote-image--text {
+  padding: 100px 30px 20px 30px;
+  background: #F7F7F7;
+  margin-top: -50px;
+  border-right: 10px solid #A8DADC;
+  min-height: 180px; }
+  @media (min-width: 576px) {
+    .quote-image--text {
+      width: 100%;
+      margin-left: -20px;
+      margin-top: 0px;
+      padding: 20px 20px 20px 80px; } }
+  @media (min-width: 992px) {
+    .quote-image--text {
+      padding: 20px 20px 20px 100px; } }
+
+.quote-image--author {
+  padding: 0px 15px; }
+  .quote-image--author:before {
+    content: "-";
+    position: relative;
+    top: 17px;
+    left: -10px; }
+  .quote-image--author p {
+    text-transform: uppercase;
+    color: #2C49A4;
+    font-size: 1em;
+    line-height: initial; }
+
+.quote-image--image {
+  position: relative;
+  z-index: 2; }
+  @media (min-width: 576px) {
+    .quote-image--image {
+      height: max-content;
+      margin-top: 6px; } }
+  .quote-image--image img {
+    position: relative;
+    z-index: 3; }
+  .quote-image--image:before {
+    content: "";
+    width: 80px;
+    height: 100px;
+    background: #FFAC5F;
+    display: block;
+    position: absolute;
+    right: -7px;
+    top: -6px;
+    z-index: 1; }
+  .quote-image--image:after {
+    content: "";
+    width: 80px;
+    height: 100px;
+    background: #A8DADC;
+    display: block;
+    position: absolute;
+    left: -7px;
+    bottom: -4px;
+    z-index: 1; }
+
+.quote-image--quote {
+  position: relative; }
+  .quote-image--quote:before {
+    content: "";
+    width: 25px;
+    height: 30px;
+    display: block;
+    background: url(../images/icons/quote-up.svg) no-repeat;
+    background-size: 100% 100%;
+    left: -10px;
+    top: -30px;
+    position: absolute; }
+    @media (min-width: 576px) {
+      .quote-image--quote:before {
+        left: -35px;
+        top: -4px; } }
+    @media (min-width: 992px) {
+      .quote-image--quote:before {
+        width: 35px;
+        height: 40px;
+        left: -45px;
+        top: -15px; } }
+  .quote-image--quote p {
+    color: #B30838; }

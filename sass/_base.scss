@@ -136,6 +136,10 @@ p {
 .flex {
   display: flex;
   flex-flow: wrap;
+
+  &.justify-center {
+    justify-content: center;
+  }
 }
 
 .image-caption {
