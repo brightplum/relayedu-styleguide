@@ -1,7 +1,7 @@
 .select-state {
     
     &--content-container {
-        padding: 34px 43px 60px 42px;
+        padding: 0 43px 0 43px;
     }
     
     &--header-container {
@@ -23,6 +23,11 @@
 
     p{
         margin-bottom: 21px;
+        font-family: "Proxima Nova Regular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 34px;
     }
    
     &--image-header {
@@ -33,6 +38,7 @@
         line-height: 31px;
         text-transform: uppercase;
         align-self: flex-end;
+        margin-left:43px;
         &:after{
             content: "";
             display: block; 
