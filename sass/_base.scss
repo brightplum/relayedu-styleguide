@@ -123,6 +123,24 @@ a {
   }
 }
 
+.link{
+  
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 34px;
+  letter-spacing: 0.315px;
+  &-white {
+    color: $white;
+  }
+  &-right-arrow{
+    text-align:right; 
+    &:after{
+        content: url("../images/icons/arrow-right.svg") !important;
+      }
+  }
+}
+
 .container {
   @include make-container();
   @include make-container-max-widths();

@@ -449,6 +449,19 @@ a {
     top: 5px;
     background-repeat: no-repeat; }
 
+.link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 34px;
+  letter-spacing: 0.315px; }
+  .link-white {
+    color: #ffffff; }
+  .link-right-arrow {
+    text-align: right; }
+    .link-right-arrow:after {
+      content: url("../images/icons/arrow-right.svg") !important; }
+
 .container {
   width: 100%;
   padding-right: 30px;
@@ -857,6 +870,9 @@ a .mobile-menu-link {
 .bg-prussian {
   background-color: #1D3557 !important; }
 
+.bg-teal {
+  background-color: #0097C7 !important; }
+
 .color-black {
   color: #000000 !important; }
 
@@ -887,6 +903,9 @@ a .mobile-menu-link {
 .color-prussian {
   color: #1D3557 !important; }
 
+.color-teal {
+  color: #0097C7 !important; }
+
 .border-black {
   border-color: #000000 !important; }
 
@@ -909,13 +928,16 @@ a .mobile-menu-link {
   border-color: #A8DADC !important; }
 
 .border-sky-blue {
-  colborder-coloror: #79B9ED !important; }
+  border-color: #79B9ED !important; }
 
 .border-pacific {
   border-color: #2C49A4 !important; }
 
 .border-prussian {
   border-color: #1D3557 !important; }
+
+.border-teal {
+  border-color: #0097C7 !important; }
 
 .card-image {
   position: relative;
@@ -1316,7 +1338,7 @@ a .mobile-menu-link {
   margin: 0 auto; }
 
 .select-state--content-container {
-  padding: 34px 43px 60px 42px; }
+  padding: 0 43px 0 43px; }
 
 .select-state--header-container {
   display: flex;
@@ -1334,14 +1356,12 @@ a .mobile-menu-link {
   width: 267px; }
 
 .select-state p {
-  margin-bottom: 21px; }
-
-.select-state--header {
-  font-family: "Chronicle Display Light", serif;
+  margin-bottom: 21px;
+  font-family: "Proxima Nova Regular", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 55px; }
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 34px; }
 
 .select-state--image-header {
   font-family: "Proxima Nova Regular", sans-serif;
@@ -1350,7 +1370,8 @@ a .mobile-menu-link {
   font-size: 27px;
   line-height: 31px;
   text-transform: uppercase;
-  align-self: flex-end; }
+  align-self: flex-end;
+  margin-left: 43px; }
   .select-state--image-header:after {
     content: "";
     display: block;
@@ -1358,6 +1379,13 @@ a .mobile-menu-link {
     width: 63px;
     padding-top: 6px;
     border-bottom: 1px solid #ffac5f; }
+
+.select-state--header {
+  font-family: "Chronicle Display Light", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 55px; }
 
 .select-state--dropdown-container {
   width: 290px;
@@ -1372,3 +1400,116 @@ a .mobile-menu-link {
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 0.576923px; }
+
+.card-experience-relay {
+  position: relative;
+  overflow: hidden; }
+  .card-experience-relay--image {
+    margin: 0 15px;
+    position: relative;
+    z-index: 0; }
+    .card-experience-relay--image .media {
+      width: 345px;
+      height: auto;
+      margin: 0 auto; }
+    @media (min-width: 768px) {
+      .card-experience-relay--image {
+        width: 70%;
+        z-index: 1;
+        position: absolute; } }
+  .card-experience-relay--header {
+    color: #2C49A4;
+    line-height: 110%;
+    position: relative;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 21px 43px; }
+    .card-experience-relay--header h3 {
+      color: #ffffff;
+      font-size: 50px;
+      line-height: 55px; }
+  .card-experience-relay--text {
+    padding: 25px 27px 25px 28px;
+    margin: 0 auto;
+    margin-top: -50px;
+    position: relative;
+    width: 305px;
+    z-index: 0; }
+    .card-experience-relay--text a {
+      letter-spacing: 0.315px;
+      text-transform: uppercase;
+      font-family: "Proxima Nova Regular", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 34px; }
+      .card-experience-relay--text a:after {
+        content: url("../images/icons/arrow-right.svg"); }
+    .card-experience-relay--text--hero-image {
+      width: 375px;
+      padding: 0;
+      margin: 0;
+      z-index: -2; }
+  .card-experience-relay--stat {
+    color: #ffffff;
+    display: block;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 5px; }
+    .card-experience-relay--stat:last-of-type {
+      border: 0; }
+    .card-experience-relay--stat h3 {
+      font-family: "Chronicle Display Light", serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 90px;
+      line-height: 96px;
+      text-transform: uppercase;
+      padding: 0; }
+    .card-experience-relay--stat span {
+      height: 68px;
+      font-family: "Proxima Nova Regular", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 34px;
+      letter-spacing: 0.345px;
+      text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .card-experience-relay {
+      width: 40%;
+      z-index: 3;
+      float: left;
+      margin-top: 160px;
+      padding: 60px 30px 65px 30px; } }
+  @media (min-width: 992px) {
+    .card-experience-relay {
+      min-height: 400px;
+      margin-top: 20%; } }
+  .card-experience-relay--decoration-top {
+    display: none;
+    position: absolute;
+    right: 125px; }
+    @media (min-width: 768px) {
+      .card-experience-relay--decoration-top {
+        display: block; } }
+  .card-experience-relay--decoration-button {
+    margin-top: -45px;
+    float: right;
+    width: 30%;
+    position: relative; }
+    @media (min-width: 768px) {
+      .card-experience-relay--decoration-button {
+        position: absolute;
+        bottom: 10px;
+        right: 200px; } }
+    .card-experience-relay--decoration-button .path-first {
+      bottom: 2px;
+      float: left;
+      width: 20px;
+      position: absolute;
+      left: -20px; }
+      @media (min-width: 768px) {
+        .card-experience-relay--decoration-button .path-first {
+          bottom: 180px;
+          width: 40px; } }
