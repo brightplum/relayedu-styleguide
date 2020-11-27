@@ -107,12 +107,14 @@ p {
 .link {
   color: $crimson;
   font-size: 1.3em;
-  line-height: 34px;
   font-family: $p-font-stack;
   text-decoration: none;
   position: relative;
-  padding-right: 20px;
+  padding-right: 0.7em;
+  line-height: inherit;
   display: table;
+  background: url("../images/icons/pointer-right.svg") no-repeat right;
+  background-size: auto 52%;
 
   &:hover {
     text-decoration: underline;
@@ -121,18 +123,6 @@ p {
 
   &.bigger {
     text-transform: uppercase;
-  }
-
-  &:after {
-    content: '';
-    background: url("../images/icons/pointer-right.svg");
-    width: 10px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -173,4 +163,13 @@ p {
 
 .main {
   position: relative;
+}
+
+.layout-content {
+  @include respond-above(sm) {
+    margin-left: 70px;
+  }
+  @include respond-above(lg) {
+    margin-left: 90px;
+  }
 }

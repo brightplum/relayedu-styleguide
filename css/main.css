@@ -582,27 +582,19 @@ p {
 .link, .paragraph a {
   color: #B30838;
   font-size: 1.3em;
-  line-height: 34px;
   font-family: Proxima Nova Regular;
   text-decoration: none;
   position: relative;
-  padding-right: 20px;
-  display: table; }
+  padding-right: 0.7em;
+  line-height: inherit;
+  display: table;
+  background: url("../images/icons/pointer-right.svg") no-repeat right;
+  background-size: auto 52%; }
   .link:hover, .paragraph a:hover {
     text-decoration: underline;
     color: #B30838; }
   .link.bigger, .paragraph a.bigger {
     text-transform: uppercase; }
-  .link:after, .paragraph a:after {
-    content: '';
-    background: url("../images/icons/pointer-right.svg");
-    width: 10px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    background-repeat: no-repeat; }
 
 .container {
   width: 100%;
@@ -653,6 +645,14 @@ p {
 
 .main {
   position: relative; }
+
+@media (min-width: 576px) {
+  .layout-content {
+    margin-left: 70px; } }
+
+@media (min-width: 992px) {
+  .layout-content {
+    margin-left: 90px; } }
 
 h1 {
   font-family: Chronicle Display Light;
@@ -781,7 +781,13 @@ h6 {
   .main-nav h3,
   .main-nav .menu-title {
     color: #1D3557;
-    font-size: 38.4px; }
+    font-size: 38.4px;
+    font-family: 'Chronicle Display Light';
+    font-family: Chronicle Display Light;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 55px;
+    margin-bottom: 20px; }
   .main-nav--bar {
     float: left;
     background: #2C49A4;
@@ -987,15 +993,18 @@ h6 {
   @media (min-width: 992px) {
     .main-nav ul li .submenu {
       padding: 20px 45px; } }
-  .main-nav ul li .submenu-block {
-    margin-bottom: 40px; }
-    .main-nav ul li .submenu-block h4,
-    .main-nav ul li .submenu-block .submenu-subtitle {
-      font-size: 0.6em;
-      text-transform: uppercase;
-      color: #1D3557;
-      font-family: Proxima Nova Bold;
-      margin-bottom: 0px; }
+  .main-nav ul li .submenu h4,
+  .main-nav ul li .submenu .submenu-subtitle {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #1D3557;
+    font-family: Proxima Nova Bold;
+    margin-bottom: 0px;
+    line-height: 45px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    display: block; }
   .main-nav ul li .submenu a:after {
     background: none; }
   .main-nav ul li .submenu a:hover:after {

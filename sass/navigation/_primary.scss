@@ -28,6 +28,12 @@
   .menu-title {
     color: $prussian;
     font-size: 38.4px;
+    font-family: 'Chronicle Display Light';
+    font-family: Chronicle Display Light;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 55px;
+    margin-bottom: 20px;
   }
 
   &--bar {
@@ -324,18 +330,20 @@
     padding: 20px 45px;
   }
 
-  &-block {
-    margin-bottom: 40px;
-
-    h4,
-    .submenu-subtitle {
-      font-size: 0.6em;
-      text-transform: uppercase;
-      color: $prussian;
-      font-family: Proxima Nova Bold;
-      margin-bottom: 0px;
-    }
+  h4,
+  .submenu-subtitle {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: $prussian;
+    font-family: Proxima Nova Bold;
+    margin-bottom: 0px;
+    line-height: 45px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    display: block;
   }
+
 
   a {
     &:after {
