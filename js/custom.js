@@ -43,7 +43,7 @@
 
 
     // Main menu
-    $('.main-nav--icon').click(function(){
+    $('.main-nav--icon').click(function() {
         $(this).toggleClass('open');
     });
 
