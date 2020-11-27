@@ -24,7 +24,8 @@
     display: flex;
   }
 
-  h3 {
+  h3,
+  .menu-title {
     color: $prussian;
     font-size: 38.4px;
   }
@@ -326,7 +327,8 @@
   &-block {
     margin-bottom: 40px;
 
-    h4 {
+    h4,
+    .submenu-subtitle {
       font-size: 0.6em;
       text-transform: uppercase;
       color: $prussian;
