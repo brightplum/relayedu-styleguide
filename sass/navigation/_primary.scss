@@ -349,6 +349,7 @@
 
     &.back {
       padding: 8px 15px 8px 20px;
+      position: relative;
       &:before {
         content: '';
         background: url("../images/icons/pointer-left-blue.svg") no-repeat;

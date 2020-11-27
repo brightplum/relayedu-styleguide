@@ -1001,7 +1001,8 @@ h6 {
   .main-nav ul li .submenu a:hover:after {
     background: none; }
   .main-nav ul li .submenu a.back {
-    padding: 8px 15px 8px 20px; }
+    padding: 8px 15px 8px 20px;
+    position: relative; }
     .main-nav ul li .submenu a.back:before {
       content: '';
       background: url("../images/icons/pointer-left-blue.svg") no-repeat;
