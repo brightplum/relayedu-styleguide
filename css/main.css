@@ -501,6 +501,16 @@ a - applies the spacing for the property in all directions
   height: 30px;
   display: block; }
 
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  min-height: 0;
+  min-width: 0; }
+
 body {
   font-size: 16px;
   font-family: Proxima Nova Regular;
