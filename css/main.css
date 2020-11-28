@@ -501,6 +501,17 @@ a - applies the spacing for the property in all directions
   height: 30px;
   display: block; }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  min-height: 0;
+  min-width: 0; }
+
 body {
   font-size: 16px;
   font-family: Proxima Nova Regular;
@@ -571,27 +582,19 @@ p {
 .link, .paragraph a {
   color: #B30838;
   font-size: 1.3em;
-  line-height: 34px;
   font-family: Proxima Nova Regular;
   text-decoration: none;
   position: relative;
-  padding-right: 20px;
-  display: table; }
+  padding-right: 0.7em;
+  line-height: inherit;
+  display: table;
+  background: url("../images/icons/pointer-right.svg") no-repeat right;
+  background-size: auto 52%; }
   .link:hover, .paragraph a:hover {
     text-decoration: underline;
     color: #B30838; }
   .link.bigger, .paragraph a.bigger {
     text-transform: uppercase; }
-  .link:after, .paragraph a:after {
-    content: '';
-    background: url("../images/icons/pointer-right.svg");
-    width: 10px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    background-repeat: no-repeat; }
 
 .container {
   width: 100%;
@@ -642,6 +645,14 @@ p {
 
 .main {
   position: relative; }
+
+@media (min-width: 576px) {
+  .layout-content {
+    margin-left: 70px; } }
+
+@media (min-width: 992px) {
+  .layout-content {
+    margin-left: 90px; } }
 
 h1 {
   font-family: Chronicle Display Light;
@@ -750,7 +761,12 @@ h6 {
 
 .nav {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  height: 0px; }
+  @media (min-width: 576px) {
+    .nav {
+      width: auto;
+      height: auto; } }
   .nav.open {
     width: 100%; }
 
@@ -762,9 +778,16 @@ h6 {
       flex-direction: row;
       flex: auto;
       display: flex; } }
-  .main-nav h3 {
+  .main-nav h3,
+  .main-nav .menu-title {
     color: #1D3557;
-    font-size: 38.4px; }
+    font-size: 38.4px;
+    font-family: 'Chronicle Display Light';
+    font-family: Chronicle Display Light;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 55px;
+    margin-bottom: 20px; }
   .main-nav--bar {
     float: left;
     background: #2C49A4;
@@ -780,35 +803,40 @@ h6 {
         width: 70px;
         padding: 20px;
         flex-direction: row;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        height: 100vh; } }
     @media (min-width: 992px) {
       .main-nav--bar {
         width: 90px;
         padding: 30px; } }
   .main-nav .parent-menu {
     background: #ffffff;
-    min-width: 200px;
     float: left;
-    width: 100%;
-    padding: 20px 30px;
+    width: 0px;
+    padding: 0px;
     position: relative;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    left: -200%;
+    left: -800px;
     top: 0px; }
     .main-nav .parent-menu.open {
-      left: 0px; }
+      left: 0px;
+      padding: 20px 30px;
+      width: 100%;
+      min-width: 200px; }
+      @media (min-width: 576px) {
+        .main-nav .parent-menu.open {
+          padding: 20px 30px;
+          width: 42%; } }
+      @media (min-width: 992px) {
+        .main-nav .parent-menu.open {
+          padding: 20px 45px;
+          width: 375px; } }
     @media (min-width: 576px) {
       .main-nav .parent-menu {
         box-shadow: 2px 0px 5px 1px #dad8d8;
-        padding: 20px 30px;
-        width: 42%;
         top: 0px; } }
-    @media (min-width: 992px) {
-      .main-nav .parent-menu {
-        padding: 20px 45px;
-        width: 375px; } }
   .main-nav .logo {
     align-self: center;
     width: 100%;
@@ -929,6 +957,8 @@ h6 {
 
 .main-nav ul li.active .submenu {
   left: 0px;
+  width: 100%;
+  padding: 20px 35px;
   -webkit-transition: left 200ms ease-in;
   -moz-transition: left 200ms ease-in;
   -ms-transition: left 200ms ease-in;
@@ -938,15 +968,16 @@ h6 {
       left: 100%; } }
   @media (min-width: 992px) {
     .main-nav ul li.active .submenu {
+      padding: 20px 45px;
       left: 100%; } }
 
 .main-nav ul li .submenu {
   background: #ffffff;
   position: absolute;
   padding: 20px 35px;
-  width: 100%;
+  width: 0px;
   top: 0;
-  left: -100%;
+  left: -430px;
   min-width: 200px;
   z-index: 2;
   height: 100%;
@@ -958,27 +989,29 @@ h6 {
     .main-nav ul li .submenu {
       box-shadow: 2px 0px 5px 1px #dad8d8;
       padding: 20px 35px;
-      left: -430px;
-      width: 100%;
       z-index: -1; } }
   @media (min-width: 992px) {
     .main-nav ul li .submenu {
-      padding: 20px 45px;
-      left: -200%; } }
-  .main-nav ul li .submenu-block {
-    margin-bottom: 40px; }
-    .main-nav ul li .submenu-block h4 {
-      font-size: 0.6em;
-      text-transform: uppercase;
-      color: #1D3557;
-      font-family: Proxima Nova Bold;
-      margin-bottom: 0px; }
+      padding: 20px 45px; } }
+  .main-nav ul li .submenu h4,
+  .main-nav ul li .submenu .submenu-subtitle {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #1D3557;
+    font-family: Proxima Nova Bold;
+    margin-bottom: 0px;
+    line-height: 45px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    display: block; }
   .main-nav ul li .submenu a:after {
     background: none; }
   .main-nav ul li .submenu a:hover:after {
     background: none; }
   .main-nav ul li .submenu a.back {
-    padding: 8px 15px 8px 20px; }
+    padding: 8px 15px 8px 20px;
+    position: relative; }
     .main-nav ul li .submenu a.back:before {
       content: '';
       background: url("../images/icons/pointer-left-blue.svg") no-repeat;

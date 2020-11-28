@@ -1,6 +1,12 @@
 .nav {
   position: absolute;
   width: 100%;
+  height: 0px;
+
+  @include respond-above(sm) {
+    width: auto;
+    height: auto;
+  }
 
   &.open {
     width: 100%;
@@ -18,9 +24,16 @@
     display: flex;
   }
 
-  h3 {
+  h3,
+  .menu-title {
     color: $prussian;
     font-size: 38.4px;
+    font-family: 'Chronicle Display Light';
+    font-family: Chronicle Display Light;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 55px;
+    margin-bottom: 20px;
   }
 
   &--bar {
@@ -39,6 +52,7 @@
       padding: 20px;
       flex-direction: row;
       flex-wrap: wrap;
+      height: 100vh;
     }
 
     @include respond-above(lg) {
@@ -49,27 +63,30 @@
 
   .parent-menu {
     background: $white;
-    min-width: 200px;
     float:left;
-    width: 100%;
-    padding: 20px 30px;
+    width: 0px;
+    padding: 0px;
     position: relative;
-
     -webkit-transition:all 0.5s ease;
     -moz-transition:all 0.5s ease;
     transition:all 0.5s ease;
-    left: -200%;
+    left: -800px;
     top: 0px;
 
     &.open {
       left: 0px;
+      padding: 20px 30px;
+      width: 100%;
+      min-width: 200px;
 
       @include respond-above(sm) {
-        //left: 0px;
+        padding: 20px 30px;
+        width: 42%;
       }
 
       @include respond-above(lg) {
-        //left: 90px;
+        padding: 20px 45px;
+        width: 375px;
       }
 
     }
@@ -77,15 +94,13 @@
 
     @include respond-above(sm) {
       box-shadow: 2px 0px 5px 1px $grey;
-      padding: 20px 30px;
-      width: 42%;
+      //width: 42%;
       top: 0px;
     }
 
-    @include respond-above(lg) {
-      padding: 20px 45px;
-      width: 375px;
-    }
+    //@include respond-above(lg) {
+    //  width: 375px;
+    //}
   }
 
 
@@ -273,6 +288,8 @@
 
 .main-nav ul li.active .submenu {
   left: 0px;
+  width: 100%;
+  padding: 20px 35px;
   -webkit-transition: left 200ms ease-in;
   -moz-transition: left 200ms ease-in;
   -ms-transition: left 200ms ease-in;
@@ -282,6 +299,7 @@
     left: 100%;
   }
   @include respond-above(lg) {
+    padding: 20px 45px;
     left: 100%;
   }
 }
@@ -291,9 +309,9 @@
   background: $white;
   position: absolute;
   padding: 20px 35px;
-  width: 100%;
+  width: 0px;
   top: 0;
-  left: -100%;
+  left: -430px;
   min-width: 200px;
   z-index: 2;
   height: 100%;
@@ -305,28 +323,27 @@
   @include respond-above(sm) {
     box-shadow: 2px 0px 5px 1px $grey;
     padding: 20px 35px;
-    left: -430px;
-    width: 100%;
     z-index: -1;
   }
 
   @include respond-above(lg) {
     padding: 20px 45px;
-    left: -200%;
-    //width: 100%;
   }
 
-  &-block {
-    margin-bottom: 40px;
-
-    h4 {
-      font-size: 0.6em;
-      text-transform: uppercase;
-      color: $prussian;
-      font-family: Proxima Nova Bold;
-      margin-bottom: 0px;
-    }
+  h4,
+  .submenu-subtitle {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: $prussian;
+    font-family: Proxima Nova Bold;
+    margin-bottom: 0px;
+    line-height: 45px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    display: block;
   }
+
 
   a {
     &:after {
@@ -340,6 +357,7 @@
 
     &.back {
       padding: 8px 15px 8px 20px;
+      position: relative;
       &:before {
         content: '';
         background: url("../images/icons/pointer-left-blue.svg") no-repeat;
