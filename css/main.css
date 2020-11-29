@@ -654,6 +654,15 @@ p {
   .layout-content {
     margin-left: 90px; } }
 
+.main-logo {
+  overflow: hidden; }
+  .main-logo img {
+    float: right;
+    max-width: 300px; }
+    @media (min-width: 992px) {
+      .main-logo img {
+        max-width: 430px; } }
+
 h1 {
   font-family: Chronicle Display Light;
   font-style: normal;

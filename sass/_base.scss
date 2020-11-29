@@ -173,3 +173,16 @@ p {
     margin-left: 90px;
   }
 }
+
+.main-logo {
+  overflow: hidden;
+
+   img {
+     float: right;
+     max-width: 300px;
+
+     @include respond-above(lg) {
+       max-width: 430px;
+     }
+   }
+}
