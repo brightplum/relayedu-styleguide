@@ -29,8 +29,21 @@
     });
 
 
+    // Plain slider
+
+    $('.plain-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        prevArrow: $('.plain-left'),
+        nextArrow: $('.plain-right'),
+        dots: true,
+    });
+
+
     // Main menu
-    $('.main-nav--icon').click(function(){
+    $('.main-nav--icon').click(function() {
         $(this).toggleClass('open');
     });
 
