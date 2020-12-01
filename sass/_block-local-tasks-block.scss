@@ -1,0 +1,70 @@
+// =============================================================================
+// BLOCK - LOCAL TASKS (View, Edit, Delete, Revisions, etc.)
+// =============================================================================
+
+.block-local-tasks-block {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-top-right-radius: 3px;
+  bottom: 0;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.15);
+  left: 5em;
+  margin-bottom: 0;
+  padding: 5px;
+  position: fixed;
+  width: auto;
+  z-index: 100;
+
+  // User pages.
+  body.path-user & {
+    border-bottom: 0;
+    box-shadow: none;
+    margin-bottom: 20px;
+    padding: 0;
+    position: static;
+  }
+
+  // Tabs.
+  ul.tabs {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      margin: 0;
+
+      @include respond-above(md) {
+        display: inline-block;
+      }
+
+      // Active.
+      &.is-active {
+        a,
+        a:visited {
+          background-color: $pacific;
+          border-color: $pacific;
+          color: $white;
+        }
+      }
+    }
+
+    // Links.
+    a,
+    a:visited {
+      border: 1px solid $white;
+      color: $pacific;
+      display: block;
+      font-weight: 700;
+      padding: 10px 15px;
+      text-decoration: none;
+      transition: border-color .3s ease;
+
+      // Hover and focus.
+      &:hover,
+      &:focus {
+        border-color: $pacific;
+      }
+    }
+  }
+}

@@ -1,11 +1,18 @@
 .callout {
-  padding: 5em 0px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 
   .callout-column {
     flex: 1 0 100%;
 
     @include respond-above(lg) {
       flex: 1 0 50%;
+    }
+  }
+
+  .callout-link {
+    a {
+      @extend .link;
     }
   }
 
