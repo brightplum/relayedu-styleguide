@@ -932,6 +932,22 @@ a .mobile-menu-link {
     display: flex;
     flex-flow: wrap; } }
 
+@media only screen and (min-width: 1339px) {
+  #footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+  #footer--our-programs {
+    width: 52%; }
+  #footer--program-locations {
+    width: 48%; }
+  .p-mobile-40 {
+    padding: 5%; }
+  .footer--program-listing {
+    margin-right: 4%; }
+    .footer--program-listing:first-of-type {
+      width: 52%; } }
+
 .p-mobile-12 {
   padding: 17px 15px 20px; }
 
