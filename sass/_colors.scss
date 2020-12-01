@@ -29,6 +29,9 @@
   &-prussian {
     background-color: $prussian !important;
   }
+  &-teal{
+    background-color: $teal !important;
+  }
 }
 
 .color {
@@ -62,6 +65,12 @@
   &-prussian {
     color: $prussian !important;
   }
+  &-teal {
+    color:$teal !important;
+  }
+  &-gray{
+    color: $gray !important;
+  }
 }
 
 .border {
@@ -87,13 +96,16 @@
     border-color: $sea-foam !important;
   }
   &-sky-blue {
-    colborder-coloror: $sky-blue !important;
+    border-color: $sky-blue !important;
   }
   &-pacific {
     border-color: $pacific !important;
   }
   &-prussian {
     border-color: $prussian !important;
+  }
+  &-teal{
+    border-color: $teal !important;
   }
 }
 

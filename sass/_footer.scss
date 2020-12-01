@@ -1,0 +1,203 @@
+#footer {
+  .footer--location-text {
+    color: $white;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.27px;
+    margin-bottom: 23px;
+  }
+  ul {
+    list-style-type: none !important;
+  }
+  ul li{
+    &::before{
+      content: "";
+      margin: 0;
+      display:inline;
+    }
+  }
+
+  h3{
+    font-family: "Chronicle Display Light", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom:43px;
+  }
+  @media only screen and (min-width: 768px) {
+    h3 {
+        width:100%;
+        margin-bottom:30px;
+      }
+    }
+  }
+
+.footer{ 
+    &--program-listing{
+      margin-bottom: 50px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    @media only screen and (min-width: 768px){
+        &--program-listing{
+          width:40%;
+          margin-right:10%;
+          margin-bottom:46.8px;
+        }  
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      &--location-search{
+        width:100%;
+        display:flex;
+      }
+    }
+    &--list-head {
+      font-family: "Proxima Nova Regular", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: $gray;
+      }
+    &--link-list{
+      margin-top:15.2px;
+      }
+      @media only screen and (min-width: 768px){
+        &--link-list {
+          
+          &::last-of-type{
+            margin-right:0;
+          }
+        }
+    }
+    &--list-subitem {
+      color: $sky-blue;
+      font-family: "Proxima Nova Regular", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      margin-bottom:13px;
+      height: 29px;
+    }
+
+
+    &--copyright{
+      &-text {
+        // display: inline-block;
+        font-family: "Proxima Nova Regular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.369231px;
+        margin-bottom: 15.4px;
+      }
+    }
+  }
+
+.p-mobile-40 {
+  padding: 43px 40px;
+}
+@media only screen and (min-width: 768px) {
+  .p-mobile-40{
+    padding: 40px 12%;
+    display:flex;
+    flex-flow:wrap;
+  }     
+}
+@media only screen and (min-width: 1339px) {
+  #footer{
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+  }
+  #footer--our-programs{
+    width:52%
+  }
+  #footer--program-locations{
+    width:48%;
+  }
+
+  .p-mobile-40{
+    padding:5%;
+  }
+
+  .footer--program-listing{
+    margin-right:4%;
+    &:first-of-type{
+      width:52%;
+    }
+  }
+}
+
+
+.p-mobile-12{
+  padding: 17px 15px 20px;
+}
+
+#footer--social {
+  margin-top: 35px;
+  a{
+    display:inline;
+    padding:0;
+    &::after{
+      display:none;
+      width:0;
+      height:0;
+      background:none;
+    }
+  }
+  img{
+    width:40px;
+    height:auto;
+  }
+  ul{
+    display:block;
+    margin: 0 auto;
+  }
+  ul li{
+    display:inline;
+    padding-right:10px;
+    &:last-of-type{
+      padding-right:0;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  #footer-social{
+    width:100%;
+    display:block;
+    margin: 0 auto;
+  }
+}
+
+li.footer--copyright-li {
+  border-right: 1px solid $prussian;
+  padding: 0 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.369231px;
+  color: $prussian;
+  display:inline;
+
+  &:first-of-type{
+    padding-left:0;
+    padding-right: 21px;
+  }
+  &:last-of-type{
+    border-right: 0;
+    padding-right: 0;
+  }
+}
