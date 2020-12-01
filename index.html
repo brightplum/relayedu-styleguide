@@ -19,7 +19,9 @@
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
 
+
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 
 
@@ -53,7 +55,7 @@
         </li>
       </ul>
 
-      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-headings-html">headings</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-accordion-html">accordion</a></li><li><a href="#sg-markup-patterns-block-quote-html">block quote</a></li><li><a href="#sg-markup-patterns-block-two-columns-html">block two columns</a></li><li><a href="#sg-markup-patterns-callout-html">callout</a></li><li><a href="#sg-markup-patterns-footer-html">footer</a></li><li><a href="#sg-markup-patterns-image-card-html">image card</a></li><li><a href="#sg-markup-patterns-navigation-html">navigation</a></li><li><a href="#sg-markup-patterns-paragraphs-html">paragraphs</a></li><li><a href="#sg-markup-patterns-slider-html">slider</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-headings-html">headings</a></li><li><a href="#sg-markup-base-logo-html">logo</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-accordion-html">accordion</a></li><li><a href="#sg-markup-patterns-block-quote-html">block quote</a></li><li><a href="#sg-markup-patterns-block-two-columns-html">block two columns</a></li><li><a href="#sg-markup-patterns-blockquote-image-html">blockquote image</a></li><li><a href="#sg-markup-patterns-callout-html">callout</a></li><li><a href="#sg-markup-patterns-card-three-columns-html">card three columns</a></li><li><a href="#sg-markup-patterns-footer-html">footer</a></li><li><a href="#sg-markup-patterns-image-card-html">image card</a></li><li><a href="#sg-markup-patterns-navigation-html">navigation</a></li><li><a href="#sg-markup-patterns-paragraphs-html">paragraphs</a></li><li><a href="#sg-markup-patterns-plain-slider-html">plain slider</a></li><li><a href="#sg-markup-patterns-slider-html">slider</a></li><li><a href="#sg-markup-patterns-tabs-html">tabs</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
 
     <div id="main" class="sg-main" role="main">
       <div class="sg-container">
@@ -235,7 +237,15 @@
 &lt;u&gt;&lt;h3 style=&quot;color:black; margin: 40px 0px;&quot; class=&quot;sg-h2&quot;&gt;Headings - Three Columns Cards:&lt;/h3&gt;&lt;/u&gt;
 &lt;div class=&quot;bg-sea-foam&quot;&gt;
     &lt;h2 class=&quot;color-prussian&quot;&gt;Heading 2&lt;/h2&gt;
-&lt;/div&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-accordion-html" class="sg-h2 sg-title">accordion</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="accordion container mb-5">
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-logo-html" class="sg-h2 sg-title">logo</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="head">
+    <div class="main-logo">
+        <img alt="logo" src="images/icons/header_logo.svg">
+    </div>
+</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;head&quot;&gt;
+    &lt;div class=&quot;main-logo&quot;&gt;
+        &lt;img alt=&quot;logo&quot; src=&quot;images/icons/header_logo.svg&quot;&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-accordion-html" class="sg-h2 sg-title">accordion</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="accordion container mb-5">
     <div class="accordion-item">
         <div class="accordion-heading">
             <h6>Accordion Item</h6>
@@ -349,23 +359,17 @@
             &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-block-quote-html" class="sg-h2 sg-title">block quote</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="block-quote container mb-5">
+&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-block-quote-html" class="sg-h2 sg-title">block quote</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="block-quote container my-5">
     <div class="block-quote--quote">
         <p>
             This is a quote pulled from story/post lorem ipsum dolar set ut lacinia pharetra dictum sit amet nulla in imperdiet aen ean. Donec pharetra dictum euismod. Donec at dignissim leo, nec pretium mi.
         </p>
     </div>
-    <div class="block-quote--citation">
-        <span>- Citation Goes Here</span>
-    </div>
-</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;block-quote container mb-5&quot;&gt;
+</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;block-quote container my-5&quot;&gt;
     &lt;div class=&quot;block-quote--quote&quot;&gt;
         &lt;p&gt;
             This is a quote pulled from story/post lorem ipsum dolar set ut lacinia pharetra dictum sit amet nulla in imperdiet aen ean. Donec pharetra dictum euismod. Donec at dignissim leo, nec pretium mi.
         &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;block-quote--citation&quot;&gt;
-        &lt;span&gt;- Citation Goes Here&lt;/span&gt;
     &lt;/div&gt;
 &lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-block-two-columns-html" class="sg-h2 sg-title">block two columns</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="block-two container mb-5">
     <article class="flex">
@@ -379,7 +383,7 @@
             <img src="images/image5.png">
         </div>
         <div class="block-two--link my-2">
-            <a href="#">This is a Link that can be long</a>
+            <a class="link" href="#">This is a Link that can be long</a>
         </div>
         <div class="block-two--text">
             <p>A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon.</p>
@@ -391,7 +395,7 @@
             <img src="images/image6.png">
         </div>
         <div class="block-two--link my-2">
-            <a href="#">This is a Link that can be long</a>
+            <a class="link" href="#">This is a Link that can be long</a>
         </div>
         <div class="block-two--text">
             <p>A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon.</p>
@@ -411,7 +415,7 @@
             &lt;img src=&quot;images/image5.png&quot;&gt;
         &lt;/div&gt;
         &lt;div class=&quot;block-two--link my-2&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;This is a Link that can be long&lt;/a&gt;
+            &lt;a class=&quot;link&quot; href=&quot;#&quot;&gt;This is a Link that can be long&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;block-two--text&quot;&gt;
             &lt;p&gt;A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon.&lt;/p&gt;
@@ -423,7 +427,7 @@
             &lt;img src=&quot;images/image6.png&quot;&gt;
         &lt;/div&gt;
         &lt;div class=&quot;block-two--link my-2&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;This is a Link that can be long&lt;/a&gt;
+            &lt;a class=&quot;link&quot; href=&quot;#&quot;&gt;This is a Link that can be long&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;block-two--text&quot;&gt;
             &lt;p&gt;A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon.&lt;/p&gt;
@@ -431,7 +435,47 @@
     &lt;/div&gt;
     &lt;/article&gt;
 
-&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-callout-html" class="sg-h2 sg-title">callout</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="callout bg-fog mb-5">
+&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-blockquote-image-html" class="sg-h2 sg-title">blockquote image</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="quote-image container">
+    <div class="flex justify-center quote-wrapper">
+        <div class="quote-image--image">
+            <img src="images/image20.png">
+        </div>
+        <div class="quote-image--text">
+            <div class="quote-image--quote">
+                <p>
+                    I love working at Relay because we take the work seriously, but not ourselves.
+                    It's a mission-driven place where I can bring my full self to work.
+                </p>
+            </div>
+            <div class="quote-image--author color-pacific">
+                <p>
+                    Alia McCants, Managing Director of Student Services
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;quote-image container&quot;&gt;
+    &lt;div class=&quot;flex justify-center quote-wrapper&quot;&gt;
+        &lt;div class=&quot;quote-image--image&quot;&gt;
+            &lt;img src=&quot;images/image20.png&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;quote-image--text&quot;&gt;
+            &lt;div class=&quot;quote-image--quote&quot;&gt;
+                &lt;p&gt;
+                    I love working at Relay because we take the work seriously, but not ourselves.
+                    It's a mission-driven place where I can bring my full self to work.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quote-image--author color-pacific&quot;&gt;
+                &lt;p&gt;
+                    Alia McCants, Managing Director of Student Services
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-callout-html" class="sg-h2 sg-title">callout</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="callout bg-fog mb-5">
     <article class="container flex">
         <div class="callout-column col-1">
             <heading>
@@ -442,7 +486,7 @@
                     A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon your evolution as a teacher and the growth of your PK-12 students.
                 </p>
             </div>
-            <a href="#">Learn More</a>
+            <a class="link" href="#">Learn More</a>
         </div>
         <div class="callout-column col-2 ">
             <div class="callout-image mt-5">
@@ -461,7 +505,7 @@
                     A hallmark of the Relay MAT program is the Master’s Defense, a capstone project at the end of year two in which you’ll reflect upon your evolution as a teacher and the growth of your PK-12 students.
                 &lt;/p&gt;
             &lt;/div&gt;
-            &lt;a href=&quot;#&quot;&gt;Learn More&lt;/a&gt;
+            &lt;a class=&quot;link&quot; href=&quot;#&quot;&gt;Learn More&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;callout-column col-2 &quot;&gt;
             &lt;div class=&quot;callout-image mt-5&quot;&gt;
@@ -469,49 +513,593 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/article&gt;
+&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-card-three-columns-html" class="sg-h2 sg-title">card three columns</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="card-three-column pb-6 pt-5 bg-sea-foam">
+    <article>
+        <header  class="container container pb-1">
+            <h2>Section title goes here</h2>
+        </header>
+
+        <div class="flex mt-4 card-three-column--row container">
+            <div class="card-column col-1 container">
+                <div class="card-three-column--image">
+                    <img src="/images/image9.png">
+                </div>
+                <div class="column container">
+                    <div class="card-three-column--text">
+                        <p>
+                            Card title and cta as a link will go here
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-column col-2 container">
+                <div class="card-three-column--image">
+                    <img src="/images/image12.png">
+                </div>
+                <div class="column container">
+                    <div class="card-three-column--text">
+                        <p>
+                            Card title and cta as a link will go here
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-column col-3 container">
+                <div class="card-three-column--image">
+                    <img src="/images/image13.png">
+                </div>
+                <div class="column container">
+                    <div class="card-three-column--text">
+                        <p>
+                            Card title and cta as a link will go here
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;card-three-column pb-6 pt-5 bg-sea-foam&quot;&gt;
+    &lt;article&gt;
+        &lt;header  class=&quot;container container pb-1&quot;&gt;
+            &lt;h2&gt;Section title goes here&lt;/h2&gt;
+        &lt;/header&gt;
+
+        &lt;div class=&quot;flex mt-4 card-three-column--row container&quot;&gt;
+            &lt;div class=&quot;card-column col-1 container&quot;&gt;
+                &lt;div class=&quot;card-three-column--image&quot;&gt;
+                    &lt;img src=&quot;/images/image9.png&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;column container&quot;&gt;
+                    &lt;div class=&quot;card-three-column--text&quot;&gt;
+                        &lt;p&gt;
+                            Card title and cta as a link will go here
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-column col-2 container&quot;&gt;
+                &lt;div class=&quot;card-three-column--image&quot;&gt;
+                    &lt;img src=&quot;/images/image12.png&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;column container&quot;&gt;
+                    &lt;div class=&quot;card-three-column--text&quot;&gt;
+                        &lt;p&gt;
+                            Card title and cta as a link will go here
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-column col-3 container&quot;&gt;
+                &lt;div class=&quot;card-three-column--image&quot;&gt;
+                    &lt;img src=&quot;/images/image13.png&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;column container&quot;&gt;
+                    &lt;div class=&quot;card-three-column--text&quot;&gt;
+                        &lt;p&gt;
+                            Card title and cta as a link will go here
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/article&gt;
 &lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-footer-html" class="sg-h2 sg-title">footer</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><footer>
 
 </footer></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;footer&gt;
 
-&lt;/footer&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-image-card-html" class="sg-h2 sg-title">image card</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="card-image card-heading card-text--right mb-5">
-<!--    <div class="card-image&#45;&#45;decoration-top">-->
-<!--        <img src="images/group1.png">-->
-<!--    </div>-->
-    <div class="card-image--image">
-    <img src="images/teacher1.png">
-    </div>
-    <div class="card-image--text bg-pacific">
-        <p>
-            Relay’s programs prepare current and future teachers and education.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.
-        </p>
-    </div>
-<!--    <div class="card-image&#45;&#45;decoration-button">-->
-<!--        <img class="path-first" src="images/path1.png">-->
-<!--        <img class="path-second" src="images/path2.png">-->
-<!--    </div>-->
+&lt;/footer&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-image-card-html" class="sg-h2 sg-title">image card</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3>
+<section class="card-image card-text--right mb-5 container">
+    <article>
+        <header>
+            <h1 class="color-crimson mb-5">Internal page title goes here</h1>
+        </header>
 
-</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;card-image card-heading card-text--right mb-5&quot;&gt;
-&lt;!--    &lt;div class=&quot;card-image&amp;#45;&amp;#45;decoration-top&quot;&gt;--&gt;
-&lt;!--        &lt;img src=&quot;images/group1.png&quot;&gt;--&gt;
-&lt;!--    &lt;/div&gt;--&gt;
-    &lt;div class=&quot;card-image--image&quot;&gt;
-    &lt;img src=&quot;images/teacher1.png&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card-image--text bg-pacific&quot;&gt;
-        &lt;p&gt;
-            Relay’s programs prepare current and future teachers and education.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.
-        &lt;/p&gt;
-    &lt;/div&gt;
-&lt;!--    &lt;div class=&quot;card-image&amp;#45;&amp;#45;decoration-button&quot;&gt;--&gt;
-&lt;!--        &lt;img class=&quot;path-first&quot; src=&quot;images/path1.png&quot;&gt;--&gt;
-&lt;!--        &lt;img class=&quot;path-second&quot; src=&quot;images/path2.png&quot;&gt;--&gt;
-&lt;!--    &lt;/div&gt;--&gt;
+        <div class="card-image--image">
+            <img src="images/teacher1.png">
+        </div>
+        <div class="card-image--text bg-prussian">
+            <p>
+                Relay’s programs prepare current and future teachers and education.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.
+            </p>
+        </div>
+    </article>
 
-&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-navigation-html" class="sg-h2 sg-title">navigation</h2></div><div class="sg-section"><h2 id="sg-markup-patterns-paragraphs-html" class="sg-h2 sg-title">paragraphs</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="container mb-5">
+</section>
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">
+&lt;section class=&quot;card-image card-text--right mb-5 container&quot;&gt;
+    &lt;article&gt;
+        &lt;header&gt;
+            &lt;h1 class=&quot;color-crimson mb-5&quot;&gt;Internal page title goes here&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;div class=&quot;card-image--image&quot;&gt;
+            &lt;img src=&quot;images/teacher1.png&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-image--text bg-prussian&quot;&gt;
+            &lt;p&gt;
+                Relay’s programs prepare current and future teachers and education.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+
+&lt;/section&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-navigation-html" class="sg-h2 sg-title">navigation</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="main">
+<section class="nav">
+    <nav class="main-nav">
+        <div class="main-nav--bar">
+            <div class="main-nav--icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <img src="images/icons/logo.svg">
+            </div>
+            <div class="logo-mobile">
+                <img src="images/icons/logo_mobile.svg">
+            </div>
+            <div class="contact-link">
+                <a href="tel:+222121212">
+                    <span class="contact-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="parent-menu">
+            <h3>Main Menu</h3>
+            <ul>
+                <li>
+                    <a class="no-hover" href="#">Home</a>
+                </li>
+                <li class="expanded"><a class="no-link" href="#">Our Programs</a>
+                    <div class="submenu">
+                        <h3>Our Programs</h3>
+                        <div class="submenu-block">
+                            <h4>For Individuals</h4>
+                            <ul>
+                                <li><a href="#">Masters of Arts in Teaching</a></li>
+                                <li><a href="#">Alternate Certification</a></li>
+                                <li><a href="#">Certifications</a></li>
+                                <li><a href="#">Professional Education</a></li>
+                                <li><a href="#">Leadership Programs</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu-block">
+                            <h4>For Organizations</h4>
+                            <ul>
+                                <li><a href="#">Teacher Pipeline</a></li>
+                                <li><a href="#">Continuing Education</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">The Relay Experience</a>
+
+                    <div class="submenu">
+                        <h3>The Relay Experience</h3>
+                        <ul>
+                            <li><a href="#">item 7</a></li>
+                            <li><a href="#">item 8</a></li>
+                            <li><a href="#">item 9</a></li>
+                            <li><a href="#">item 10</a></li>
+                            <li><a href="#">item 11</a></li>
+                            <li><a href="#">item 12</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">About Us</a>
+
+                    <div class="submenu">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">item 13</a></li>
+                            <li><a href="#">item 14</a></li>
+                            <li><a href="#">item 15</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">Financial Aid</a>
+                    <div class="submenu">
+                        <h3>Financial Aid</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">Locations</a>
+                    <div class="submenu">
+                        <h3>Locations</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">Resources</a>
+                    <div class="submenu">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="expanded"><a class="no-link" href="#">Alumni</a>
+                    <div class="submenu">
+                        <h3>Alumni</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="expanded"><a class="no-link" href="#">Support Us</a>
+                    <div class="submenu">
+                        <h3>Support Us</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="expanded"><a class="no-link" href="#">News & Events</a>
+                    <div class="submenu">
+                        <h3>News & Events</h3>
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                        <div class="menu-back">
+                            <a class="back" href="#">Back</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="extra-links">
+                <li>
+                    <a class="no-hover" href="#">Library</a>
+                </li>
+                <li>
+                    <a class="no-hover" href="#">Support</a>
+                </li>
+                <li>
+                    <a class="no-hover" href="#">Student Portal</a>
+                </li>
+            </ul>
+
+            <div class="search">
+                <input type="search" placeholder="Search..">
+            </div>
+        </div>
+
+    </nav>
+</section>
+    <section class="container" style="height: 900px; padding-top: 90px">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit consequat eros diam praesent conubia,
+        lacus natoque risus aptent habitasse sagittis vel per ligula porta. Duis nibh sociosqu imperdiet
+        ornare curae lacus cum viverra porta cubilia urna, non diam felis arcu facilisis dictum litora nam
+        tempor. Cras non dictumst eleifend facilisis sociosqu est, cursus euismod integer leo tempor.
+
+        Diam libero rutrum risus maecenas eros nisi aenean facilisis duis cursus montes, dictum commodo
+        euismod molestie congue venenatis massa dui volutpat sociosqu, cum curabitur metus in augue sagittis
+        tortor conubia himenaeos bibendum. Placerat dictum nisi accumsan sed mi ullamcorper tortor lobortis
+        augue, aliquam elementum a aenean euismod hendrerit nostra bibendum commodo vel, cursus montes porttitor
+        sociis risus urna senectus pharetra. Facilisi netus dis enim in neque torquent natoque bibendum vestibulum,
+        fames ut posuere pretium dictum mattis fermentum laoreet, venenatis sociosqu fusce sem dignissim dapibus
+        auctor phasellus.
+    </section>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;main&quot;&gt;
+&lt;section class=&quot;nav&quot;&gt;
+    &lt;nav class=&quot;main-nav&quot;&gt;
+        &lt;div class=&quot;main-nav--bar&quot;&gt;
+            &lt;div class=&quot;main-nav--icon&quot;&gt;
+                &lt;span&gt;&lt;/span&gt;
+                &lt;span&gt;&lt;/span&gt;
+                &lt;span&gt;&lt;/span&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;img src=&quot;images/icons/logo.svg&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;logo-mobile&quot;&gt;
+                &lt;img src=&quot;images/icons/logo_mobile.svg&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;contact-link&quot;&gt;
+                &lt;a href=&quot;tel:+222121212&quot;&gt;
+                    &lt;span class=&quot;contact-icon&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;parent-menu&quot;&gt;
+            &lt;h3&gt;Main Menu&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;no-hover&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Our Programs&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Our Programs&lt;/h3&gt;
+                        &lt;div class=&quot;submenu-block&quot;&gt;
+                            &lt;h4&gt;For Individuals&lt;/h4&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Masters of Arts in Teaching&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Alternate Certification&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Certifications&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Professional Education&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Leadership Programs&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;submenu-block&quot;&gt;
+                            &lt;h4&gt;For Organizations&lt;/h4&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Teacher Pipeline&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Continuing Education&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;The Relay Experience&lt;/a&gt;
+
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;The Relay Experience&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 7&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 8&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 9&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 10&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 11&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 12&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;About Us&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 13&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 14&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 15&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Financial Aid&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Financial Aid&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Locations&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Locations&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Resources&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Resources&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Alumni&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Alumni&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;Support Us&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;Support Us&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;expanded&quot;&gt;&lt;a class=&quot;no-link&quot; href=&quot;#&quot;&gt;News &amp; Events&lt;/a&gt;
+                    &lt;div class=&quot;submenu&quot;&gt;
+                        &lt;h3&gt;News &amp; Events&lt;/h3&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class=&quot;menu-back&quot;&gt;
+                            &lt;a class=&quot;back&quot; href=&quot;#&quot;&gt;Back&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;extra-links&quot;&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;no-hover&quot; href=&quot;#&quot;&gt;Library&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;no-hover&quot; href=&quot;#&quot;&gt;Support&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;no-hover&quot; href=&quot;#&quot;&gt;Student Portal&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&quot;search&quot;&gt;
+                &lt;input type=&quot;search&quot; placeholder=&quot;Search..&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/nav&gt;
+&lt;/section&gt;
+    &lt;section class=&quot;container&quot; style=&quot;height: 900px; padding-top: 90px&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipiscing elit consequat eros diam praesent conubia,
+        lacus natoque risus aptent habitasse sagittis vel per ligula porta. Duis nibh sociosqu imperdiet
+        ornare curae lacus cum viverra porta cubilia urna, non diam felis arcu facilisis dictum litora nam
+        tempor. Cras non dictumst eleifend facilisis sociosqu est, cursus euismod integer leo tempor.
+
+        Diam libero rutrum risus maecenas eros nisi aenean facilisis duis cursus montes, dictum commodo
+        euismod molestie congue venenatis massa dui volutpat sociosqu, cum curabitur metus in augue sagittis
+        tortor conubia himenaeos bibendum. Placerat dictum nisi accumsan sed mi ullamcorper tortor lobortis
+        augue, aliquam elementum a aenean euismod hendrerit nostra bibendum commodo vel, cursus montes porttitor
+        sociis risus urna senectus pharetra. Facilisi netus dis enim in neque torquent natoque bibendum vestibulum,
+        fames ut posuere pretium dictum mattis fermentum laoreet, venenatis sociosqu fusce sem dignissim dapibus
+        auctor phasellus.
+    &lt;/section&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-paragraphs-html" class="sg-h2 sg-title">paragraphs</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="container mb-5">
 <section class="paragraph">
     <article>
         <header>
@@ -540,7 +1128,7 @@
             two-year degree and certification* program.
 
         </p>
-        <ul>
+        <ul class="bullets">
             <li>Working with expert faculty.</li>
             <li>You’ll learn proven teaching skills.</li>
             <li>Build the mindsets necessary to lead a vibrant.</li>
@@ -591,7 +1179,7 @@
             two-year degree and certification* program.
 
         &lt;/p&gt;
-        &lt;ul&gt;
+        &lt;ul class=&quot;bullets&quot;&gt;
             &lt;li&gt;Working with expert faculty.&lt;/li&gt;
             &lt;li&gt;You’ll learn proven teaching skills.&lt;/li&gt;
             &lt;li&gt;Build the mindsets necessary to lead a vibrant.&lt;/li&gt;
@@ -613,7 +1201,101 @@
 
     &lt;/article&gt;
 &lt;/section&gt;
-&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-slider-html" class="sg-h2 sg-title">slider</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div id="cards-1" class="slider internal card-slider container">
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-plain-slider-html" class="sg-h2 sg-title">plain slider</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="container">
+    <section class="plain-slider--wrap">
+        <div class="plain-slider slider">
+            <div class="plain-slide">
+                <div class="plain-slide--media">
+                    <div class="plain-slide--video">
+                        <iframe width="100%" height="531" src="https://www.youtube.com/embed/VewB9aV7Zpw?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="plain-slide--headings">
+                    <div class="plain-slide--subheading">
+                        <h6>Subheading goes here</h6>
+                    </div>
+                    <div class="plain-slide--heading">
+                        <h3 class="underline">Heading goes here</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plain-slide">
+                <div class="plain-slide--media">
+                    <img src="images/image54.png">
+                </div>
+                <div class="plain-slide--headings">
+                    <div class="plain-slide--subheading">
+                        <h6>Subheading goes here</h6>
+                    </div>
+                    <div class="plain-slide--heading">
+                        <h3 class="underline">Heading goes here</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plain-slide">
+                <div class="plain-slide--media">
+                    <img src="images/image54.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider-controls">
+            <div class="control plain-left slider-controls--left"></div>
+            <div class="control plain-right slider-controls--right"></div>
+        </div>
+    </section>
+</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;container&quot;&gt;
+    &lt;section class=&quot;plain-slider--wrap&quot;&gt;
+        &lt;div class=&quot;plain-slider slider&quot;&gt;
+            &lt;div class=&quot;plain-slide&quot;&gt;
+                &lt;div class=&quot;plain-slide--media&quot;&gt;
+                    &lt;div class=&quot;plain-slide--video&quot;&gt;
+                        &lt;iframe width=&quot;100%&quot; height=&quot;531&quot; src=&quot;https://www.youtube.com/embed/VewB9aV7Zpw?enablejsapi=1&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&quot;&gt;
+                        &lt;/iframe&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;plain-slide--headings&quot;&gt;
+                    &lt;div class=&quot;plain-slide--subheading&quot;&gt;
+                        &lt;h6&gt;Subheading goes here&lt;/h6&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;plain-slide--heading&quot;&gt;
+                        &lt;h3 class=&quot;underline&quot;&gt;Heading goes here&lt;/h3&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;plain-slide&quot;&gt;
+                &lt;div class=&quot;plain-slide--media&quot;&gt;
+                    &lt;img src=&quot;images/image54.png&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;plain-slide--headings&quot;&gt;
+                    &lt;div class=&quot;plain-slide--subheading&quot;&gt;
+                        &lt;h6&gt;Subheading goes here&lt;/h6&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;plain-slide--heading&quot;&gt;
+                        &lt;h3 class=&quot;underline&quot;&gt;Heading goes here&lt;/h3&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;plain-slide&quot;&gt;
+                &lt;div class=&quot;plain-slide--media&quot;&gt;
+                    &lt;img src=&quot;images/image54.png&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;slider-controls&quot;&gt;
+            &lt;div class=&quot;control plain-left slider-controls--left&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;control plain-right slider-controls--right&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/section&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-slider-html" class="sg-h2 sg-title">slider</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div id="cards-1" class="slider internal card-slider container">
 
     <div class="card-slide">
         <div class="flex">
@@ -741,7 +1423,63 @@
             &lt;/article&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code></pre></div></div></div></div></div>
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-tabs-html" class="sg-h2 sg-title">tabs</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><section class="tabs container">
+    <input type="radio" name="tabs" id="tab-one" checked="checked">
+    <label for="tab-one">Tab One <span class="pointer"></span></label>
+    <div class="tab">
+        <h3>Tab One Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="image-caption mt-4">
+        <img src="/images/image17.png">
+        <div class="image-caption--caption">
+            Image caption will go here at Relay, our staff members strive to exemplify our core values.
+        </div>
+        </div>
+    </div>
+
+    <input type="radio" name="tabs" id="tab-two">
+    <label for="tab-two">Tab Two <span class="pointer"></span></label>
+    <div class="tab">
+        <h3>Tab Two Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <input type="radio" name="tabs" id="tab-three">
+    <label for="tab-three">Tab Three <span class="pointer"></span></label>
+    <div class="tab">
+        <h3>Tab Three Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</section></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;section class=&quot;tabs container&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;tabs&quot; id=&quot;tab-one&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;tab-one&quot;&gt;Tab One &lt;span class=&quot;pointer&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;div class=&quot;tab&quot;&gt;
+        &lt;h3&gt;Tab One Content&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;div class=&quot;image-caption mt-4&quot;&gt;
+        &lt;img src=&quot;/images/image17.png&quot;&gt;
+        &lt;div class=&quot;image-caption--caption&quot;&gt;
+            Image caption will go here at Relay, our staff members strive to exemplify our core values.
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;input type=&quot;radio&quot; name=&quot;tabs&quot; id=&quot;tab-two&quot;&gt;
+    &lt;label for=&quot;tab-two&quot;&gt;Tab Two &lt;span class=&quot;pointer&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;div class=&quot;tab&quot;&gt;
+        &lt;h3&gt;Tab Two Content&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;input type=&quot;radio&quot; name=&quot;tabs&quot; id=&quot;tab-three&quot;&gt;
+    &lt;label for=&quot;tab-three&quot;&gt;Tab Three &lt;span class=&quot;pointer&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;div class=&quot;tab&quot;&gt;
+        &lt;h3&gt;Tab Three Content&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre></div></div></div></div></div>
       </div><!--/.sg-container-->
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->

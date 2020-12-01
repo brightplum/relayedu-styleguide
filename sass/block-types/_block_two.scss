@@ -1,5 +1,12 @@
 .block-two {
 
+  &--link {
+    a {
+      @extend .link;
+      text-transform: uppercase;
+    }
+  }
+
   &--column {
     flex: 1 0 100%;
 

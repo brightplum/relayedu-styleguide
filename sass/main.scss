@@ -3,6 +3,8 @@
 @import "reset";
 @import "breakpoints";
 @import "space";
+@import 'colors.scss';
+@import "icons";
 @import 'base';
 @import 'headings';
 @import 'alerts_errors';
@@ -14,6 +16,8 @@
 @import 'navigation/secondary';
 @import 'footer';
 @import 'colors';
+@import 'footer';
+@import 'paragraphs';
 @import "block-types/card_image";
 @import "block-types/card_video_hero";
 @import "block-types/accordion";
@@ -24,3 +28,9 @@
 @import "block-types/programs";
 @import "block-types/select-state";
 @import "block-types/experience_relay";
+@import "block-types/tabs";
+@import "block-types/card_three-column";
+@import "block-types/search";
+@import "block-types/quote_image";
+@import "block-types/plain_slider";
+@import "block-local-tasks-block";

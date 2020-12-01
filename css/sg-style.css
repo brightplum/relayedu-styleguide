@@ -58,6 +58,7 @@ body {
   padding-left: 1rem;
   padding-right: 16px; /* For older browsers */
   padding-right: 1rem;
+  z-index: 99;
 }
 
 .sg-sidebar a::after {

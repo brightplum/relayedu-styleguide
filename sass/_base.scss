@@ -1,14 +1,30 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 body {
   font-size: 16px;
   font-family: $p-font-stack;
   color: rgb(88,89,91);
 }
 
-a {
+.link {
   &:hover {
     color: #d9d9d9;
   }
 
+}
+
+img {
+  height: auto;
 }
 
 li {
@@ -74,7 +90,7 @@ p {
   color:  black;
 }
 
-ul {
+.bullets {
   li {
     font-size: 21px;
     line-height: 38px;
@@ -92,14 +108,17 @@ ul {
   }
 }
 
-a {
+.link {
   color: $crimson;
   font-size: 1.3em;
-  line-height: 34px;
   font-family: $p-font-stack;
   text-decoration: none;
   position: relative;
-  padding-right: 20px;
+  padding-right: 0.7em;
+  line-height: inherit;
+  display: table;
+  background: url("../images/icons/pointer-right.svg") no-repeat right;
+  background-size: auto 52%;
 
   &:hover {
     text-decoration: underline;
@@ -108,18 +127,6 @@ a {
 
   &.bigger {
     text-transform: uppercase;
-  }
-
-  &:after {
-    content: '';
-    background: url("../images/icons/pointer-right.svg");
-    width: 10px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -150,8 +157,61 @@ a {
   @include make-container();
 }
 
-
 .flex {
   display: flex;
   flex-flow: wrap;
+
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.image-caption,
+figcaption {
+  font-family: Proxima Nova Regular;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 29px;
+  text-align: center;
+  color: $prussian;
+}
+
+
+.full-width {
+  margin: 0 calc((100% - 100vw)/2);
+  max-width: none;
+  overflow: auto;
+  width: 100vw;
+}
+
+.main {
+  position: relative;
+}
+
+.layout-content {
+  @include respond-above(sm) {
+    margin-left: 70px;
+  }
+  @include respond-above(lg) {
+    margin-left: 90px;
+  }
+}
+
+.main-logo {
+  overflow: hidden;
+  display: none;
+
+  @include respond-above(sm) {
+    display: block;
+  }
+
+   img {
+     float: right;
+     max-width: 300px;
+
+     @include respond-above(lg) {
+       max-width: 430px;
+     }
+   }
 }

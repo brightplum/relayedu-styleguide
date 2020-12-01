@@ -1,0 +1,101 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    order: initial;
+    display: block;
+    padding: 16px;
+    cursor: pointer;
+    background: $fog;
+    transition: background ease 0.2s;
+    position: relative;
+
+    color: $pacific;
+    font-size: 21px;
+    font-family: $p-font-stack;
+    line-height: initial;
+
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+
+    @include respond-above(sm) {
+
+      width: auto;
+      order: 1;
+      border-bottom: 1px solid $fog;
+      background: $white;
+      margin: 0px 30px 40px 0px;
+    }
+
+    .pointer {
+      width: 15px;
+      height: 45px;
+      background: url('/images/icons/pointer-down.svg') no-repeat center center;
+      display: block;
+      float: right;
+      position: absolute;
+      right: 16px;
+      top: 5px;
+
+      @include respond-above(sm) {
+       display: none;
+      }
+    }
+  }
+
+  .tab {
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 0px 16px 16px 20px;
+    background: $fog;
+    order: initial;
+
+    @include respond-above(sm) {
+      order: 99;
+      background: $white;
+      padding: 16px 0px;
+    }
+
+    h3 {
+      color: $pacific;
+    }
+
+    &:before {
+      content: "";
+      width: 100px;
+      height: 3px;
+      background: $orange;
+      display: block;
+      margin-bottom: 30px;
+
+      @include respond-above(sm) {
+        display: none;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    @include respond-above(sm) {
+      border-bottom: 1px solid $orange;
+      background: $fog;
+      color: $black;
+    }
+
+    .pointer {
+      background: url('/images/icons/pointer-up.svg') no-repeat center center;
+    }
+  }
+
+  input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+
+}
+

@@ -2,78 +2,53 @@
 
   &--quote {
     position: relative;
-    margin-top: 30px;
-
-    @include respond-above(md) {
-      padding: 0px 40px;
-    }
-
-    @include respond-above(lg) {
-      padding: 0px 50px;
-      max-width: 70%;
-      margin: 30px auto 24px auto;
-    }
+    padding: 50px;
+    background: $fog;
+    max-width: 850px;
+    margin: auto;
 
     p {
-      color: $crimson;
+      color: $prussian;
       font-size: 1.6em;
       font-style: italic;
     }
 
     &:before {
       content: "";
-      width: 25px;
-      height: 30px;
+      width: 100px;
+      height: 145px;
+      background: $sea-foam;
       display: block;
-      background: url("../images/icons/quote-up.svg") no-repeat;
-      background-size: 100% 100%;
+      bottom: -10px;
       left: -10px;
-      top: -30px;
       position: absolute;
-
-      @include respond-above(md) {
-        left: 0px;
-        top: -10px;
-        width: 35px;
-        height: 40px;
-      }
+      z-index: -1;
 
       @include respond-above(lg) {
-        width: 50px;
-        height: 50px;
-        top: -25px;
+        width: 100px;
+        height: 113px;
+        bottom: -12px;
+        left: -12px;
       }
     }
 
     &:after {
       content: "";
-      width: 25px;
-      height: 30px;
+      width: 60px;
+      height: 112px;
+      background: $orange;
       display: block;
-      background: url("../images/icons/quote-down.svg") no-repeat;
-      background-size: 100% 100%;
-      right: -16px;
+      right: -10px;
+      bottom: 20%;
       position: absolute;
-      bottom: -15px;
-
-      @include respond-above(md) {
-        right: 0px;
-        bottom: -10px;
-        width: 35px;
-        height: 40px;
-      }
+      z-index: -1;
 
       @include respond-above(lg) {
-        width: 50px;
-        height: 50px;
-        bottom: -25px;
+        width: 100px;
+        right: -15px;
+        height: 80px;
       }
     }
-  }
-  &--citation {
-    text-transform: uppercase;
-    text-align: center;
-    color: $pacific;
-    font-size: 1em;
+
   }
 }

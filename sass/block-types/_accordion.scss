@@ -16,8 +16,6 @@
       .accordion-body {
         max-height: 200vh;
       }
-
-
     }
   }
 
@@ -30,19 +28,19 @@
       color: $pacific;
       font-size: 21px;
       font-family: $p-font-stack;
+      line-height: initial;
     }
 
     .pointer {
       width: 15px;
-      height: 45px;
+      height: 58px;
       background: url('/images/icons/pointer-down.svg') no-repeat center center;
       display: block;
       float: right;
       position: absolute;
       right: 16px;
-      top: 16px;
+      top: 0px;
     }
-
   }
 
   &-body {
@@ -60,6 +58,5 @@
       display: block;
       margin-bottom: 20px;
     }
-
   }
 }

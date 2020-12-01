@@ -1,0 +1,93 @@
+.plain-slider {
+
+  .plain-slide {
+    &--headings {
+      position: absolute;
+      bottom: 0px;
+      padding: 15px 35px;
+
+      h3 {
+        font-size: 2.1em;
+        line-height: 35px;
+
+        @include respond-above(sm) {
+          font-size: 3.1em;
+          line-height: 55px;
+        }
+      }
+    }
+
+    &--subheading {
+      h6 {
+        font-family: Proxima Nova Regular;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.875px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+
+    &--heading {
+      color: $white;
+    }
+
+    img {
+      object-fit: cover;
+      min-height: 300px;
+    }
+
+    &--video {
+      position: relative;
+      padding-bottom: 300px;
+      height: 0;
+      overflow: hidden;
+
+      @include respond-above(md) {
+        padding-bottom: 49.2%;
+      }
+
+
+      iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &--wrap {
+    position: relative;
+
+    .slider-controls {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 0px;
+
+    .slick-active button:before {
+      color: $white;
+    }
+
+    li {
+      margin: 0px;
+      height: 30px;
+    }
+
+    li button:before {
+      color: $white;
+      font-size: 8px;
+    }
+  }
+
+
+
+}

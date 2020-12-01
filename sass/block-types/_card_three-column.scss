@@ -1,0 +1,103 @@
+.card-three-column {
+
+  h2 {
+    color: $prussian;
+  }
+
+  &--text {
+    padding: 20px;
+    margin: -50px 0px 60px 0px;
+    color: $white;
+    background: $prussian;
+    position: relative;
+
+    p {
+      color: $white;
+    }
+
+    @include respond-above(sm) {
+      margin: 0px 0px 0px -50px;
+    }
+
+    @include respond-above(lg) {
+      margin: -50px 20px 0px 20px;
+    }
+
+  }
+
+  &--image {
+    img {
+      width: 100%;
+    }
+
+    @include respond-above(sm) {
+      width: 70%;
+    }
+
+    @include respond-above(lg) {
+      width: 100%;
+    }
+  }
+
+  &--row {
+    &.container {
+      @include respond-below(lg) {
+        width: auto;
+        margin: initial;
+        padding: initial;
+        max-width: none;
+      }
+    }
+  }
+
+  .card-column {
+    flex: 1 0 100%;
+
+    &.container {
+      @include respond-below(sm) {
+        width: auto;
+        margin: initial;
+        padding: initial;
+      }
+
+      @include respond-above(lg) {
+        width: auto;
+        margin: 0px 20px 0px 0px;
+        padding: initial;
+      }
+
+      &.col-3 {
+        @include respond-above(lg) {
+          margin: 0px;
+        }
+      }
+    }
+
+    @include respond-above(sm) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    @include respond-above(lg) {
+      flex: 1 0 30%;
+      display: block;
+    }
+
+    .column {
+      @include respond-above(sm) {
+        width: 40%;
+        max-width: none;
+        padding: initial;
+        margin: initial;
+        float: right;
+      }
+
+      @include respond-above(lg) {
+        width: 100%;
+      }
+    }
+  }
+
+
+}
