@@ -866,6 +866,27 @@ a .mobile-menu-link {
   line-height: 55px;
   margin-bottom: 43px; }
 
+@media only screen and (min-width: 768px) {
+  #footer h3 {
+    width: 100%;
+    margin-bottom: 30px; } }
+
+.footer--program-listing {
+  margin-bottom: 50px; }
+  .footer--program-listing:last-of-type {
+    margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .footer--program-listing {
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: 46.8px; } }
+
+@media only screen and (min-width: 768px) {
+  .footer--location-search {
+    width: 100%;
+    display: flex; } }
+
 .footer--list-head {
   font-family: "Proxima Nova Regular", sans-serif;
   font-style: normal;
@@ -879,6 +900,10 @@ a .mobile-menu-link {
 .footer--link-list {
   margin-top: 15.2px; }
 
+@media only screen and (min-width: 768px) {
+  .footer--link-list::last-of-type {
+    margin-right: 0; } }
+
 .footer--list-subitem {
   color: #79B9ED;
   font-family: "Proxima Nova Regular", sans-serif;
@@ -888,11 +913,6 @@ a .mobile-menu-link {
   line-height: 29px;
   margin-bottom: 13px;
   height: 29px; }
-
-.footer--program-listing {
-  margin-bottom: 50px; }
-  .footer--program-listing:last-of-type {
-    margin-bottom: 0; }
 
 .footer--copyright-text {
   font-family: "Proxima Nova Regular", sans-serif;
@@ -905,6 +925,12 @@ a .mobile-menu-link {
 
 .p-mobile-40 {
   padding: 43px 40px; }
+
+@media only screen and (min-width: 768px) {
+  .p-mobile-40 {
+    padding: 40px 12%;
+    display: flex;
+    flex-flow: wrap; } }
 
 .p-mobile-12 {
   padding: 17px 15px 20px; }
@@ -930,6 +956,12 @@ a .mobile-menu-link {
     padding-right: 10px; }
     #footer--social ul li:last-of-type {
       padding-right: 0; }
+
+@media only screen and (min-width: 768px) {
+  #footer-social {
+    width: 100%;
+    display: block;
+    margin: 0 auto; } }
 
 li.footer--copyright-li {
   border-right: 1px solid #1D3557;
@@ -1500,6 +1532,10 @@ li.footer--copyright-li {
 
 .select-state--dropdown-container {
   padding: 25px 15px 15px 15px; }
+
+@media only screen and (min-width: 768px) {
+  .select-state--dropdown-container {
+    width: 100%; } }
 
 .select-state select {
   border-bottom: 1px solid #2C49A4;
