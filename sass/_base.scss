@@ -23,6 +23,10 @@ body {
 
 }
 
+img {
+  height: auto;
+}
+
 li {
   p {
     font-weight: 200;
@@ -144,8 +148,9 @@ p {
   }
 }
 
-.image-caption {
-  font-family: "Proxima Nova Regular";
+.image-caption,
+figcaption {
+  font-family: Proxima Nova Regular;
   font-style: italic;
   font-weight: normal;
   font-size: 1.125em;
@@ -153,6 +158,7 @@ p {
   text-align: center;
   color: $prussian;
 }
+
 
 .full-width {
   margin: 0 calc((100% - 100vw)/2);
@@ -176,6 +182,11 @@ p {
 
 .main-logo {
   overflow: hidden;
+  display: none;
+
+  @include respond-above(sm) {
+    display: block;
+  }
 
    img {
      float: right;
