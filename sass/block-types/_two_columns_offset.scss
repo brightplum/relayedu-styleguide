@@ -1,0 +1,62 @@
+.two-column-offset {
+  &--wrap {
+    @include respond-above(md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .column {
+    &.column-left {
+      @include respond-above(md) {
+        padding-right: 30px;
+      }
+    }
+
+    &.column-right {
+      @include respond-above(md) {
+        padding-left: 20px;
+      }
+    }
+
+    @include respond-above(md) {
+      flex: 1 0 50%;
+    }
+  }
+
+  .text {
+    margin-bottom: 20px;
+
+  }
+
+  .media {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: $teal;
+      top: 50px;
+      left: 100px;
+      z-index: 0;
+    }
+
+    iframe {
+      min-height: 250px;
+      z-index: 2;
+      position: relative;
+      max-width: 570px;
+
+      @include respond-above(sm) {
+        min-height: 300px;
+      }
+
+      @include respond-above(md) {
+        min-height: 374px;
+      }
+    }
+  }
+}
