@@ -20,6 +20,17 @@
     }
   }
 
+  &--form {
+    border: 2px solid $white;
+    background: $prussian;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: $prussian;
+    }
+  }
+
   &--secondary {
     border: 2px solid $orange;
     background: $white;
