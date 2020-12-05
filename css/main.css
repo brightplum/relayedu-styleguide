@@ -1901,7 +1901,7 @@ li.footer--copyright-li {
   position: relative;
   text-align: left; }
   .accordion-item.active .pointer {
-    background: url("/images/icons/pointer-up.svg") no-repeat center center; }
+    background: url("../images/icons/pointer-up.svg") no-repeat center center; }
   .accordion-item.active .accordion-body {
     max-height: 200vh; }
 
@@ -1917,7 +1917,7 @@ li.footer--copyright-li {
   .accordion-heading .pointer {
     width: 15px;
     height: 58px;
-    background: url("/images/icons/pointer-down.svg") no-repeat center center;
+    background: url("../images/icons/pointer-down.svg") no-repeat center center;
     display: block;
     float: right;
     position: absolute;
