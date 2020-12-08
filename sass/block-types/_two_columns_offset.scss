@@ -49,6 +49,7 @@
       z-index: 2;
       position: relative;
       max-width: 570px;
+      width: 100%;
 
       @include respond-above(sm) {
         min-height: 300px;
