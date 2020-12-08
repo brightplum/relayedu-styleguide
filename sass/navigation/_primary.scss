@@ -4,15 +4,13 @@
   height: 0px;
   top: 0px;
   z-index: 99;
+  left: 0px;
 
   @include respond-above(sm) {
     width: auto;
     height: auto;
   }
 
-  &.open {
-    width: 100%;
-  }
 }
 
 .main-nav {
@@ -253,7 +251,7 @@
       }
 
       a {
-        font-size: 0.85em;
+        font-size: 1em;
         line-height: 28px;
         padding: 8px 15px 8px 0px;
         display:block;
@@ -332,7 +330,7 @@
 
   h4,
   .submenu-subtitle {
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-transform: uppercase;
     color: $prussian;
     font-family: Proxima Nova Bold;
@@ -377,5 +375,24 @@
     }
 
   }
+}
 
+.layout-container {
+  padding-top: 60px;
+
+  @include respond-above(sm) {
+    padding-top: inherit;
+  }
+
+
+  .main-nav {
+    height: 0px;
+    position: fixed;
+    width: 100%;
+
+    @include respond-above(sm) {
+      width: inherit;
+      height: inherit;
+    }
+  }
 }
