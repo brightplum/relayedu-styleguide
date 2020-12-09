@@ -1,4 +1,6 @@
 .two-column-offset {
+  overflow: hidden;
+
   &--wrap {
     @include respond-above(md) {
       display: flex;
