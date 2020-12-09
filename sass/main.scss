@@ -18,6 +18,7 @@
 @import 'colors';
 @import 'footer';
 @import 'paragraphs';
+@import "block-local-tasks-block";
 @import "block-types/card_image";
 @import "block-types/card_video_hero";
 @import "block-types/accordion";
@@ -34,4 +35,5 @@
 @import "block-types/quote_image";
 @import "block-types/plain_slider";
 @import "block-types/two_columns_offset";
-@import "block-local-tasks-block";
+@import "block-types/header_quick_links";
+
