@@ -675,30 +675,6 @@ figcaption {
 .main {
   position: relative; }
 
-.layout-container {
-  position: relative;
-  padding-top: 10px; }
-  @media (min-width: 576px) {
-    .layout-container {
-      padding-left: 70px;
-      padding-top: inherit; } }
-  @media (min-width: 992px) {
-    .layout-container {
-      padding-left: 90px; } }
-
-.main-logo {
-  overflow: hidden;
-  display: none; }
-  @media (min-width: 576px) {
-    .main-logo {
-      display: block; } }
-  .main-logo img {
-    float: right;
-    max-width: 300px; }
-    @media (min-width: 992px) {
-      .main-logo img {
-        max-width: 430px; } }
-
 h1 {
   font-family: Chronicle Display Light;
   font-style: normal;
@@ -822,6 +798,35 @@ h6 {
     .btn--secondary:hover {
       background: #FFAC5F;
       color: #ffffff; }
+
+.layout-container {
+  position: relative;
+  padding-top: 10px; }
+  @media (min-width: 576px) {
+    .layout-container {
+      padding-left: 70px;
+      padding-top: inherit; } }
+  @media (min-width: 992px) {
+    .layout-container {
+      padding-left: 90px; } }
+
+.main-logo {
+  overflow: hidden;
+  display: none; }
+  @media (min-width: 576px) {
+    .main-logo {
+      display: block; } }
+  .main-logo img {
+    float: right;
+    max-width: 300px; }
+    @media (min-width: 992px) {
+      .main-logo img {
+        max-width: 430px; } }
+
+.page-node-type-location .main-logo {
+  position: absolute;
+  z-index: 10;
+  right: 0; }
 
 .inline-fields {
   display: flex;
@@ -2768,6 +2773,8 @@ li.footer--copyright-li {
     width: 100%;
     height: 100%;
     z-index: 1; }
+    .header-quick-links .header-media-wrap .header-media .contextual-region {
+      position: initial; }
   .header-quick-links .header-media-wrap img {
     position: absolute;
     width: 100%;
@@ -2790,14 +2797,14 @@ li.footer--copyright-li {
       flex-flow: row; } }
   .header-quick-links .header-quick-content h4 {
     font-family: Proxima Nova Bold; }
-  .header-quick-links .header-quick-content li a {
+  .header-quick-links .header-quick-content a {
     font-family: Proxima Nova Regular;
     text-transform: uppercase;
     padding: 10px 0px;
     color: #1D3557;
     text-decoration: none;
     display: block; }
-    .header-quick-links .header-quick-content li a:hover {
+    .header-quick-links .header-quick-content a:hover {
       color: #B30838; }
   @media (min-width: 768px) {
     .header-quick-links .header-quick-content--text {

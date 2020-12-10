@@ -19,6 +19,10 @@
       width: 100%;
       height: 100%;
       z-index: 1;
+
+      .contextual-region {
+        position: initial;
+      }
     }
 
     img {
@@ -54,20 +58,19 @@
       font-family: Proxima Nova Bold;
     }
 
-    li {
-      a {
-        font-family: Proxima Nova Regular;
-        text-transform: uppercase;
-        padding: 10px 0px;
-        color: $prussian;
-        text-decoration: none;
-        display: block;
+    a {
+      font-family: Proxima Nova Regular;
+      text-transform: uppercase;
+      padding: 10px 0px;
+      color: $prussian;
+      text-decoration: none;
+      display: block;
 
-        &:hover {
-          color: $crimson;
-        }
+      &:hover {
+        color: $crimson;
       }
     }
+
 
     &--text {
       @include respond-above(md) {
