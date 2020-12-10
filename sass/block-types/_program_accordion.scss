@@ -1,0 +1,177 @@
+.program-accordion {
+
+  &--wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include respond-above(lg) {
+      flex-direction: row;
+    }
+
+    .accordion-bigger {
+      font-size: 1.6em;
+    }
+  }
+
+  &--accordion {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include respond-above(md) {
+      margin: initial;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include respond-above(lg) {
+      margin-top: 10%;
+      margin-left: 50px;
+    }
+  }
+
+  &--text {
+    @include respond-above(md) {
+      max-width: 70%;
+    }
+
+    @include respond-above(lg) {
+      max-width: 30%;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      background: $light-orange;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      margin: 0 calc((100% - 100vw)/2);
+      max-width: none;
+      overflow: auto;
+      width: 100vw;
+
+      @include respond-above(md) {
+        width: 70%;
+        margin: initial;
+      }
+
+      @include respond-above(lg) {
+        width: 50%;
+      }
+    }
+  }
+
+  &-item {
+    margin-bottom: 20px;
+    @include respond-above(md) {
+      flex: 0 1 48.5%;
+    }
+
+    &.active {
+
+      h5 {
+        color: $sea-foam;
+      }
+
+      @include respond-above(md) {
+        flex: 0 1 100%;
+      }
+
+      .program-accordion-heading {
+        padding: 40px 30px 1px 30px;
+      }
+
+      .program-accordion-body {
+        max-height: 200vh;
+      }
+    }
+  }
+
+  &-heading {
+    padding: 40px 30px 40px 30px;
+    cursor: pointer;
+
+    h5 {
+      color: $white;
+    }
+
+    h6 {
+      color: $white;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-family: Proxima Nova Regular;
+      display: block;
+      line-height: initial;
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+
+  &-body {
+    padding: 0px 30px;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s linear all;
+
+    &--top {
+      background: $prussian-black;
+      padding: 20px;
+      margin-left: -20px;
+      margin-right: -20px;
+      color: $sea-foam;
+    }
+
+    &--body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  &-tab {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &-icon {
+    margin: auto;
+  }
+
+  &-text {
+    h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: $sky-blue;
+      font-family: Proxima Nova Regular;
+      line-height: initial;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-ctas {
+    display: flex;
+    background: $prussian-black;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -30px;
+    margin-left: -30px;
+    margin-top: 20px;
+
+    a:first-child {
+      margin-right: 20px;
+    }
+  }
+
+}
