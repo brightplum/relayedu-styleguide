@@ -1,0 +1,43 @@
+.layout-container {
+  position: relative;
+  padding-top: 10px;
+
+  @include respond-above(sm) {
+    padding-left: 70px;
+    padding-top: inherit;
+  }
+
+  @include respond-above(lg) {
+    padding-left: 90px;
+  }
+}
+
+.main-logo {
+  overflow: hidden;
+  display: none;
+
+  @include respond-above(sm) {
+    display: block;
+  }
+
+  img {
+    float: right;
+    max-width: 300px;
+
+    @include respond-above(lg) {
+      max-width: 430px;
+    }
+  }
+}
+
+
+.page-node-type-location {
+
+  .main-logo {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+  }
+
+
+}
