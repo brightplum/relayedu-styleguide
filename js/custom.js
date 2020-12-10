@@ -16,6 +16,25 @@
     });
 
 
+    // Program Accordion
+    $('.program-accordion-heading').click(function () {
+        if ($(this).parent().hasClass('active')) {
+            $(this).parent().attr('aria-expanded', 'false');
+            $(this).parent().removeClass('active');
+            $(this).find('h6').removeClass('active');
+        } else {
+            $('.program-accordion-item').each(function (index, element) {
+                $(element).attr('aria-expanded', 'false');
+                $(element).removeClass('active');
+                $(element).find('h6').removeClass('active');
+            })
+            $(this).parent().attr('aria-expanded', 'true');
+            $(this).parent().addClass('active');
+            $(this).find('h6').addClass('active');
+        }
+    });
+
+
 
     //Card-slider
 
