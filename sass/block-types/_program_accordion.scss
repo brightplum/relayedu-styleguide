@@ -90,6 +90,10 @@
         max-height: 200vh;
       }
     }
+
+    &.expanded {
+      flex: 0 1 100%;
+    }
   }
 
   &-heading {
@@ -132,6 +136,12 @@
     &--body {
       display: flex;
       flex-direction: column;
+      padding: 20px 0px 20px;
+
+      @include respond-above(md) {
+        flex-direction: row;
+        padding: 40px 0px 20px 0px;
+      }
     }
 
     p {
@@ -146,6 +156,10 @@
 
   &-icon {
     margin: auto;
+
+    @include respond-above(md) {
+      flex: 1 0 20%;
+    }
   }
 
   &-text {
@@ -156,6 +170,10 @@
       font-family: Proxima Nova Regular;
       line-height: initial;
       margin-bottom: 10px;
+    }
+
+    @include respond-above(md) {
+      flex: 1 0 80%;
     }
   }
 
@@ -168,6 +186,10 @@
     margin-right: -30px;
     margin-left: -30px;
     margin-top: 20px;
+
+    @include respond-above(md) {
+      justify-content: flex-end;
+    }
 
     a:first-child {
       margin-right: 20px;
