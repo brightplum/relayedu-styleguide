@@ -2217,9 +2217,60 @@ li.footer--copyright-li {
   .card-slider--text p {
     color: #ffffff; }
 
-.programs .btn, .programs .programs--image {
-  display: block;
-  margin: 0 auto; }
+.explore-programs {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .explore-programs h2 {
+      font-size: 8em;
+      line-height: inherit; } }
+  @media (min-width: 992px) {
+    .explore-programs {
+      flex-direction: row; } }
+  .explore-programs-icon {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .explore-programs-icon-image {
+      margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .explore-programs--icons {
+      width: 70%;
+      min-width: 500px;
+      max-width: 700px; } }
+  .explore-programs--icons-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 576px) {
+      .explore-programs--icons-icons {
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (min-width: 768px) {
+      .explore-programs--icons-icons {
+        padding: 0px 100px; } }
+    @media (min-width: 992px) {
+      .explore-programs--icons-icons {
+        padding: 0px 5%; } }
+  @media (min-width: 768px) {
+    .explore-programs--text {
+      padding: 0px 100px 20px 100px; } }
+  @media (min-width: 992px) {
+    .explore-programs--text {
+      width: 50%;
+      padding: 0px 0px 0px 50px; } }
+  .explore-programs--text-text {
+    position: relative;
+    padding-bottom: 20px; }
+    .explore-programs--text-text:after {
+      content: "";
+      width: 100px;
+      height: 2px;
+      background: #0097C7;
+      position: absolute;
+      bottom: 0px;
+      display: block; }
 
 .select-state--content-container {
   padding: 0 43px 0 43px; }
