@@ -2217,68 +2217,126 @@ li.footer--copyright-li {
   .card-slider--text p {
     color: #ffffff; }
 
-.programs .btn, .programs .programs--image {
-  display: block;
-  margin: 0 auto; }
-
-.select-state--content-container {
-  padding: 0 43px 0 43px; }
-
-.select-state--header-container {
+.explore-programs {
   display: flex;
-  background-image: url("../images/atlanta-cityscape-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding: 0;
-  height: 0;
-  padding-bottom: 427px; }
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .explore-programs h2 {
+      font-size: 8em;
+      line-height: inherit; } }
+  @media (min-width: 992px) {
+    .explore-programs {
+      flex-direction: row; } }
+  .explore-programs-icon {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .explore-programs-icon-image {
+      margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .explore-programs--icons {
+      width: 70%;
+      min-width: 500px;
+      max-width: 700px; } }
+  .explore-programs--icons-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 576px) {
+      .explore-programs--icons-icons {
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (min-width: 768px) {
+      .explore-programs--icons-icons {
+        padding: 0px 100px; } }
+    @media (min-width: 992px) {
+      .explore-programs--icons-icons {
+        padding: 0px 5%; } }
+  @media (min-width: 768px) {
+    .explore-programs--text {
+      padding: 0px 100px 20px 100px; } }
+  @media (min-width: 992px) {
+    .explore-programs--text {
+      width: 50%;
+      padding: 0px 0px 0px 50px; } }
+  .explore-programs--text-text {
+    position: relative;
+    padding-bottom: 20px; }
+    .explore-programs--text-text:after {
+      content: "";
+      width: 100px;
+      height: 2px;
+      background: #0097C7;
+      position: absolute;
+      bottom: 0px;
+      display: block; }
 
-.select-state button {
+@media (min-width: 576px) {
+  .find-location {
+    display: flex; } }
+
+@media (max-width: 991px) {
+  .find-location.container {
+    width: 100%;
+    margin: initial;
+    padding: initial;
+    max-width: 100%; } }
+
+.find-location--location {
+  margin-top: -3px;
+  padding: 0px 30px;
+  background: #2C49A4; }
+  @media (min-width: 576px) {
+    .find-location--location {
+      width: 40%;
+      max-width: none;
+      padding: initial;
+      margin-right: initial;
+      margin-left: initial;
+      float: right;
+      z-index: 2;
+      background: transparent;
+      margin-top: initial; } }
+  @media (min-width: 576px) {
+    .find-location--location-wrap {
+      margin-left: -50%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 100%; } }
+  @media (min-width: 992px) {
+    .find-location--location-wrap {
+      margin-top: 20%; } }
+  .find-location--location p {
+    color: #ffffff; }
+
+.find-location--image {
+  position: relative; }
+  @media (min-width: 576px) {
+    .find-location--image {
+      width: 70%; } }
+  .find-location--image-img {
+    position: relative; }
+  .find-location--image img {
+    min-height: 425px;
+    object-fit: cover; }
+  .find-location--image-heading {
+    position: absolute;
+    bottom: 10px; }
+    .find-location--image-heading h6 {
+      text-transform: uppercase;
+      font-family: Proxima Nova Regular; }
+
+.find-location button {
   display: block;
   margin: 0 auto;
   margin-top: 34px;
   width: 100%; }
 
-.select-state p {
-  margin-bottom: 21px;
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 34px; }
-
-.select-state--image-header {
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 31px;
-  text-transform: uppercase;
-  align-self: flex-end;
-  margin-left: 43px; }
-  .select-state--image-header:after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 63px;
-    padding-top: 6px;
-    border-bottom: 1px solid #ffac5f; }
-
-.select-state--header {
-  font-family: "Chronicle Display Light", serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 55px; }
-
-.select-state--dropdown-container {
+.find-location--dropdown-container {
   padding: 25px 15px 15px 15px; }
 
-@media only screen and (min-width: 768px) {
-  .select-state--dropdown-container {
-    width: 100%; } }
-
-.select-state select {
+.find-location select {
   border-bottom: 1px solid #2C49A4;
   font-family: "Chronicle Display", serif;
   text-align: left;
@@ -2914,6 +2972,8 @@ li.footer--copyright-li {
     padding: 40px 30px 1px 30px; }
   .program-accordion-item.active .program-accordion-body {
     max-height: 200vh; }
+  .program-accordion-item.expanded {
+    flex: 0 1 100%; }
 
 .program-accordion-heading {
   padding: 40px 30px 40px 30px;
@@ -2944,7 +3004,12 @@ li.footer--copyright-li {
     color: #A8DADC; }
   .program-accordion-body--body {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 20px 0px 20px; }
+    @media (min-width: 768px) {
+      .program-accordion-body--body {
+        flex-direction: row;
+        padding: 40px 0px 20px 0px; } }
   .program-accordion-body p {
     color: #ffffff; }
 
@@ -2954,6 +3019,9 @@ li.footer--copyright-li {
 
 .program-accordion-icon {
   margin: auto; }
+  @media (min-width: 768px) {
+    .program-accordion-icon {
+      flex: 1 0 20%; } }
 
 .program-accordion-text h4 {
   text-transform: uppercase;
@@ -2962,6 +3030,10 @@ li.footer--copyright-li {
   font-family: Proxima Nova Regular;
   line-height: initial;
   margin-bottom: 10px; }
+
+@media (min-width: 768px) {
+  .program-accordion-text {
+    flex: 1 0 80%; } }
 
 .program-accordion-ctas {
   display: flex;
@@ -2972,5 +3044,8 @@ li.footer--copyright-li {
   margin-right: -30px;
   margin-left: -30px;
   margin-top: 20px; }
+  @media (min-width: 768px) {
+    .program-accordion-ctas {
+      justify-content: flex-end; } }
   .program-accordion-ctas a:first-child {
     margin-right: 20px; }
