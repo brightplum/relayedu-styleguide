@@ -2221,64 +2221,71 @@ li.footer--copyright-li {
   display: block;
   margin: 0 auto; }
 
-.select-state--content-container {
-  padding: 0 43px 0 43px; }
+@media (min-width: 576px) {
+  .find-location {
+    display: flex; } }
 
-.select-state--header-container {
-  display: flex;
-  background-image: url("../images/atlanta-cityscape-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding: 0;
-  height: 0;
-  padding-bottom: 427px; }
+@media (max-width: 991px) {
+  .find-location.container {
+    width: 100%;
+    margin: initial;
+    padding: initial;
+    max-width: 100%; } }
 
-.select-state button {
+.find-location--location {
+  margin-top: -3px;
+  padding: 0px 30px;
+  background: #2C49A4; }
+  @media (min-width: 576px) {
+    .find-location--location {
+      width: 40%;
+      max-width: none;
+      padding: initial;
+      margin-right: initial;
+      margin-left: initial;
+      float: right;
+      z-index: 2;
+      background: transparent;
+      margin-top: initial; } }
+  @media (min-width: 576px) {
+    .find-location--location-wrap {
+      margin-left: -50%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 100%; } }
+  @media (min-width: 992px) {
+    .find-location--location-wrap {
+      margin-top: 20%; } }
+  .find-location--location p {
+    color: #ffffff; }
+
+.find-location--image {
+  position: relative; }
+  @media (min-width: 576px) {
+    .find-location--image {
+      width: 70%; } }
+  .find-location--image-img {
+    position: relative; }
+  .find-location--image img {
+    min-height: 425px;
+    object-fit: cover; }
+  .find-location--image-heading {
+    position: absolute;
+    bottom: 10px; }
+    .find-location--image-heading h6 {
+      text-transform: uppercase;
+      font-family: Proxima Nova Regular; }
+
+.find-location button {
   display: block;
   margin: 0 auto;
   margin-top: 34px;
   width: 100%; }
 
-.select-state p {
-  margin-bottom: 21px;
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 34px; }
-
-.select-state--image-header {
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 31px;
-  text-transform: uppercase;
-  align-self: flex-end;
-  margin-left: 43px; }
-  .select-state--image-header:after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 63px;
-    padding-top: 6px;
-    border-bottom: 1px solid #ffac5f; }
-
-.select-state--header {
-  font-family: "Chronicle Display Light", serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 55px; }
-
-.select-state--dropdown-container {
+.find-location--dropdown-container {
   padding: 25px 15px 15px 15px; }
 
-@media only screen and (min-width: 768px) {
-  .select-state--dropdown-container {
-    width: 100%; } }
-
-.select-state select {
+.find-location select {
   border-bottom: 1px solid #2C49A4;
   font-family: "Chronicle Display", serif;
   text-align: left;

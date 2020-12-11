@@ -1,0 +1,100 @@
+.find-location {
+  @include respond-above(sm) {
+    display: flex;
+  }
+
+  &.container {
+    @include respond-below(lg) {
+      width: 100%;
+      margin: initial;
+      padding: initial;
+      max-width: 100%;
+    }
+  }
+
+  &--location {
+    margin-top: -3px;
+    padding: 0px 30px;
+    background: $pacific;
+
+    @include respond-above(sm) {
+      width: 40%;
+      max-width: none;
+      padding: initial;
+      margin-right: initial;
+      margin-left: initial;
+      float: right;
+      z-index: 2;
+      background: transparent;
+      margin-top: initial;
+    }
+
+    &-wrap {
+      @include respond-above(sm) {
+        margin-left: -50%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 100%;
+      }
+
+      @include respond-above(lg) {
+        margin-top: 20%;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  &--image {
+    position: relative;
+
+    @include respond-above(sm) {
+      width: 70%;
+    }
+
+    &-img {
+      position: relative;
+    }
+
+    img {
+      min-height: 425px;
+      object-fit: cover;
+    }
+
+    &-heading {
+      position: absolute;
+      bottom: 10px;
+
+      h6 {
+        text-transform: uppercase;
+        font-family: Proxima Nova Regular;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 34px;
+    width: 100%;
+  }
+
+  &--dropdown-container {
+    padding: 25px 15px 15px 15px;
+  }
+
+  select {
+    border-bottom: 1px solid $pacific;
+    font-family: "Chronicle Display", serif;
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.576923px;
+    padding: 0;
+    padding-bottom: 2px;
+  }
+}
