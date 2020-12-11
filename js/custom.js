@@ -22,9 +22,13 @@
             $(this).parent().attr('aria-expanded', 'false');
             $(this).parent().removeClass('active');
             $(this).find('h6').removeClass('active');
+            $('.program-accordion-item').each(function (index, element) {
+                $(element).removeClass('expanded');
+            });
         } else {
             $('.program-accordion-item').each(function (index, element) {
                 $(element).attr('aria-expanded', 'false');
+                $(element).addClass('expanded');
                 $(element).removeClass('active');
                 $(element).find('h6').removeClass('active');
             })
