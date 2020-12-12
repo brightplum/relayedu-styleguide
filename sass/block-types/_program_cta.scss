@@ -40,6 +40,15 @@
         @include respond-above(lg) {
           margin-bottom: 30px;
         }
+
+        .field__item {
+          display: flex;
+        }
+
+        a {
+          @extend .btn;
+          @extend .btn--primary;
+        }
       }
     }
 
@@ -64,6 +73,17 @@
           margin-top: 20%;
         }
       }
+
+      .program-cta--cta {
+        .field__item {
+          display: flex;
+        }
+
+        a {
+          @extend .btn;
+          @extend .btn--white-celadon;
+        }
+      }
     }
   }
 
@@ -78,5 +98,4 @@
       color: $white;
     }
   }
-
 }

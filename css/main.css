@@ -764,7 +764,7 @@ h6 {
 .alert-info {
   background-color: #ffffff; }
 
-.btn {
+.btn, .program-cta--col.col-1 .program-cta--cta a, .program-cta--col.col-2 .program-cta--cta a {
   padding: 15px 30px;
   text-transform: uppercase;
   border: 2px solid;
@@ -774,12 +774,12 @@ h6 {
   font-size: 0.875em;
   line-height: 14px;
   background: transparent; }
-  .btn--primary {
+  .btn--primary, .program-cta--col.col-1 .program-cta--cta a {
     border: 2px solid #B30838;
     background: transparent;
     color: #B30838;
     text-decoration: none; }
-    .btn--primary:hover {
+    .btn--primary:hover, .program-cta--col.col-1 .program-cta--cta a:hover {
       background: #B30838;
       color: #ffffff; }
   .btn--form {
@@ -790,12 +790,12 @@ h6 {
     .btn--form:hover {
       background: #ffffff;
       color: #1D3557; }
-  .btn--white-celadon {
+  .btn--white-celadon, .program-cta--col.col-2 .program-cta--cta a {
     border: 2px solid #ffffff;
     background: transparent;
     color: #ffffff;
     text-decoration: none; }
-    .btn--white-celadon:hover {
+    .btn--white-celadon:hover, .program-cta--col.col-2 .program-cta--cta a:hover {
       background: #ffffff;
       color: #457B9D;
       border-color: #ffffff; }
@@ -3167,6 +3167,9 @@ li.footer--copyright-li {
   .program-cta--col.col-1 .program-cta--cta {
     margin-bottom: 30px; } }
 
+.program-cta--col.col-1 .program-cta--cta .field__item {
+  display: flex; }
+
 @media (min-width: 576px) {
   .program-cta--col.col-2 {
     margin-top: -50px;
@@ -3186,6 +3189,9 @@ li.footer--copyright-li {
     margin-left: -60px;
     margin-top: 20%; } }
 
+.program-cta--col.col-2 .program-cta--cta .field__item {
+  display: flex; }
+
 .program-cta--cta {
   display: flex;
   justify-content: center;
@@ -3193,3 +3199,53 @@ li.footer--copyright-li {
 
 .program-cta--text p {
   color: #ffffff; }
+
+@media (min-width: 992px) {
+  .program-option--item-wrap {
+    display: flex; } }
+
+@media (min-width: 992px) {
+  .program-option--col.col-1 {
+    width: 70%; } }
+
+.program-option--col.col-1 .program-option--col-col {
+  border: 1px solid;
+  padding: 30px 30px 100px 30px; }
+  @media (min-width: 992px) {
+    .program-option--col.col-1 .program-option--col-col {
+      padding: 30px 150px 30px 30px; } }
+
+.program-option--col.col-1 .program-option--col-text {
+  border-top: 1px solid #FFAC5F;
+  padding-top: 30px; }
+
+.program-option--col.col-2 {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 992px) {
+    .program-option--col.col-2 {
+      width: 30%;
+      align-items: center; } }
+  .program-option--col.col-2 .program-option--col-col {
+    padding: 30px;
+    margin: -50px 20px 0px 20px;
+    max-width: 400px;
+    width: 100%; }
+    @media (min-width: 992px) {
+      .program-option--col.col-2 .program-option--col-col {
+        max-width: initial;
+        display: block;
+        margin: 0px 0px 0px -50%;
+        width: auto; } }
+  .program-option--col.col-2 h6 {
+    font-family: Proxima Nova Bold;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: initial; }
+
+.program-option ul li {
+  margin-bottom: 10px;
+  font-size: 1.3em; }
+  .program-option ul li:before {
+    content: url("../images/icons/check-red.svg");
+    margin-right: 10px; }
