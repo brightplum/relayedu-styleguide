@@ -2,59 +2,87 @@ h1 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: 300;
-  font-size: 5.6em;
+  font-size: 5em;
   line-height: 96px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 5.6em;
+  }
 }
 
 h2 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: 300;
-  font-size: 3.7em;
+  font-size: 3.1em;
   line-height: 68px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 3.7em;
+  }
 }
 
 h3 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: normal;
-  font-size: 3.1em;
+  font-size: 2.6em;
   line-height: 55px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 3.1em;
+  }
 }
 
 h4 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 1.8em;
   line-height: 45px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 2.5em;
+  }
 }
 
 h5 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 1.8em;
   line-height: 45px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 2.5em;
+  }
 }
 
 h6 {
   font-family: $h-font-stack;
   font-style: normal;
   font-weight: 325;
-  font-size: 1.8em;
+  font-size: 1.3em;
   line-height: 45px;
   margin-bottom: 20px;
+
+  @include respond-above(sm) {
+    font-size: 1.8em;
+  }
 }
 
 .big-size {
-  font-size: 5.6em;
+  font-size: 4.6em;
   line-height: 96px;
+
+  @include respond-above(sm) {
+    font-size: 5.6em;
+  }
 }
 
 .underline {
