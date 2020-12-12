@@ -30,14 +30,38 @@
   }
 }
 
-
 .page-node-type-location {
-
   .main-logo {
     position: absolute;
     z-index: 10;
     right: 0;
   }
-
-
 }
+
+.xs {
+  display: block;
+  @include respond-above(sm) {
+    display: none;
+  }
+}
+
+.sm {
+  display: none;
+  @include respond-above(sm) {
+    display: block;
+  }
+}
+
+.md {
+  display: none;
+  @include respond-above(md) {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+  @include respond-above(lg) {
+    display: block;
+  }
+ }
