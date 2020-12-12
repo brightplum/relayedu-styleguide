@@ -610,19 +610,21 @@ p {
     color: #B30838; }
   .link.bigger, .callout .callout-link a.bigger, .block-two--link a.bigger {
     text-transform: uppercase; }
-
-.link, .callout .callout-link a, .block-two--link a {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 34px;
-  letter-spacing: 0.315px; }
   .link-white {
+    text-decoration: none;
+    position: relative;
+    padding-right: 15px;
+    line-height: inherit;
+    display: table;
+    text-transform: uppercase;
     color: #ffffff; }
+    .link-white:hover {
+      text-decoration: underline;
+      color: #ffffff; }
   .link-right-arrow {
-    text-align: right; }
-    .link-right-arrow:after {
-      content: url("../images/icons/arrow-right.svg") !important; }
+    text-align: right;
+    background: url("../images/icons/arrow-right.svg") no-repeat right;
+    background-size: auto 82%; }
 
 .container {
   width: 100%;
@@ -827,6 +829,30 @@ h6 {
   position: absolute;
   z-index: 10;
   right: 0; }
+
+.xs {
+  display: block; }
+  @media (min-width: 576px) {
+    .xs {
+      display: none; } }
+
+.sm {
+  display: none; }
+  @media (min-width: 576px) {
+    .sm {
+      display: block; } }
+
+.md {
+  display: none; }
+  @media (min-width: 768px) {
+    .md {
+      display: block; } }
+
+.lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .lg {
+      display: block; } }
 
 .inline-fields {
   display: flex;
@@ -2351,66 +2377,92 @@ li.footer--copyright-li {
 .card-experience-relay {
   position: relative;
   overflow: hidden; }
-  .card-experience-relay--image {
-    margin: 0 15px;
-    position: relative;
-    z-index: 0; }
-    .card-experience-relay--image .media {
-      width: 345px;
-      height: auto;
-      margin: 0 auto; }
-    @media (min-width: 768px) {
-      .card-experience-relay--image {
-        width: 70%;
-        z-index: 1;
-        position: absolute; } }
+  @media (min-width: 576px) {
+    .card-experience-relay--wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
   .card-experience-relay--header {
     color: #2C49A4;
-    line-height: 110%;
     position: relative;
-    font-size: 50px;
-    font-weight: 300;
-    padding: 21px 43px; }
+    font-weight: 300; }
     .card-experience-relay--header h3 {
       color: #ffffff;
       font-size: 50px;
       line-height: 55px; }
-  .card-experience-relay--text {
-    padding: 25px 27px 25px 28px;
-    margin: 0 auto;
-    margin-top: -50px;
+  .card-experience-relay--card {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 576px) {
+      .card-experience-relay--card {
+        flex-direction: column-reverse;
+        width: 50%;
+        max-width: 480px; } }
+  @media (min-width: 576px) {
+    .card-experience-relay--card-image {
+      margin-left: 50px;
+      margin-top: -60px;
+      position: relative;
+      z-index: 3; } }
+  .card-experience-relay--card-image img {
+    width: 100%; }
+  .card-experience-relay--card-text {
+    padding: 25px 28px 25px 28px;
+    margin: -50px 10px 50px 10px;
     position: relative;
-    width: 305px;
-    z-index: 0; }
-    .card-experience-relay--text a {
-      letter-spacing: 0.315px;
+    z-index: 0;
+    overflow: hidden; }
+    @media (min-width: 576px) {
+      .card-experience-relay--card-text {
+        margin: 0px 60px 0px 0px;
+        padding: 25px 28px 80px 28px; } }
+    .card-experience-relay--card-text a {
       text-transform: uppercase;
-      font-family: "Proxima Nova Regular", sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 19px;
-      line-height: 34px; }
-    .card-experience-relay--text--hero-image {
-      width: 375px;
-      padding: 0;
-      margin: 0;
-      z-index: -2; }
+      font-family: Proxima Nova Regular;
+      float: right;
+      text-decoration: none; }
+  @media (min-width: 576px) {
+    .card-experience-relay--text {
+      width: 45%; } }
+  @media (min-width: 992px) {
+    .card-experience-relay--text {
+      padding-left: 0px;
+      min-width: 450px; } }
+  @media (min-width: 992px) {
+    .card-experience-relay--text h2 {
+      font-size: 5.6em;
+      line-height: 96px; } }
+  .card-experience-relay--text-image img {
+    width: 100%; }
+  @media (min-width: 992px) {
+    .card-experience-relay--text-image {
+      padding-left: 40px; } }
+  @media (min-width: 576px) {
+    .card-experience-relay--text-text {
+      padding-left: 0px; } }
+  @media (min-width: 992px) {
+    .card-experience-relay--text-text {
+      padding-left: 40px; } }
   .card-experience-relay--stat {
     color: #ffffff;
     display: block;
     padding-bottom: 15px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #A8DADC;
     margin-bottom: 5px; }
+    @media (min-width: 576px) {
+      .card-experience-relay--stat {
+        font-size: 0.8em; } }
     .card-experience-relay--stat:last-of-type {
       border: 0; }
     .card-experience-relay--stat h3 {
       font-family: "Chronicle Display Light", serif;
       font-style: normal;
       font-weight: 300;
-      font-size: 90px;
+      font-size: 5.6em;
       line-height: 96px;
       text-transform: uppercase;
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 0px; }
     .card-experience-relay--stat span {
       height: 68px;
       font-family: "Proxima Nova Regular", sans-serif;
@@ -2420,44 +2472,6 @@ li.footer--copyright-li {
       line-height: 34px;
       letter-spacing: 0.345px;
       text-transform: uppercase; }
-  @media (min-width: 768px) {
-    .card-experience-relay {
-      width: 40%;
-      z-index: 3;
-      float: left;
-      margin-top: 160px;
-      padding: 60px 30px 65px 30px; } }
-  @media (min-width: 992px) {
-    .card-experience-relay {
-      min-height: 400px;
-      margin-top: 20%; } }
-  .card-experience-relay--decoration-top {
-    display: none;
-    position: absolute;
-    right: 125px; }
-    @media (min-width: 768px) {
-      .card-experience-relay--decoration-top {
-        display: block; } }
-  .card-experience-relay--decoration-button {
-    margin-top: -45px;
-    float: right;
-    width: 30%;
-    position: relative; }
-    @media (min-width: 768px) {
-      .card-experience-relay--decoration-button {
-        position: absolute;
-        bottom: 10px;
-        right: 200px; } }
-    .card-experience-relay--decoration-button .path-first {
-      bottom: 2px;
-      float: left;
-      width: 20px;
-      position: absolute;
-      left: -20px; }
-      @media (min-width: 768px) {
-        .card-experience-relay--decoration-button .path-first {
-          bottom: 180px;
-          width: 40px; } }
 
 .tabs {
   display: flex;
