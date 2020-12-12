@@ -29,8 +29,11 @@
   &-prussian {
     background-color: $prussian !important;
   }
-  &-teal{
+  &-teal {
     background-color: $teal !important;
+  }
+  &-celadon {
+    background-color: $celadon !important;
   }
 }
 
@@ -71,6 +74,9 @@
   &-gray{
     color: $gray !important;
   }
+  &-celadon {
+    color: $celadon !important;
+  }
 }
 
 .border {
@@ -106,6 +112,9 @@
   }
   &-teal{
     border-color: $teal !important;
+  }
+  &-celadon {
+    border-color: $celadon !important;
   }
 }
 
