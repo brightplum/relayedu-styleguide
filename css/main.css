@@ -542,6 +542,9 @@ li p {
 img, svg, video, audio {
   max-width: 100%; }
 
+strong {
+  font-family: Proxima Nova Bold; }
+
 button {
   border: none;
   text-align: center;
