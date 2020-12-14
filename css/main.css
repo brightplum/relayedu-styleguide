@@ -764,7 +764,7 @@ h6 {
 .alert-info {
   background-color: #ffffff; }
 
-.btn, .program-cta--col.col-1 .program-cta--cta a, .program-cta--col.col-2 .program-cta--cta a {
+.btn, .program-accordion-ctas .cta-left a, .program-accordion-ctas .cta-right a, .program-cta--col.col-1 .program-cta--cta a, .program-cta--col.col-2 .program-cta--cta a {
   padding: 15px 30px;
   text-transform: uppercase;
   border: 2px solid;
@@ -799,12 +799,12 @@ h6 {
       background: #ffffff;
       color: #457B9D;
       border-color: #ffffff; }
-  .btn--sea {
-    border: 2px solid #A8DADC;
+  .btn--sea, .program-accordion-ctas .cta-left a, .program-accordion-ctas .cta-right a {
+    border: 2px solid #ffffff;
     background: transparent;
     color: #ffffff;
     text-decoration: none; }
-    .btn--sea:hover {
+    .btn--sea:hover, .program-accordion-ctas .cta-left a:hover, .program-accordion-ctas .cta-right a:hover {
       background: transparent;
       color: #A8DADC;
       border-color: #A8DADC; }
@@ -3095,6 +3095,9 @@ li.footer--copyright-li {
       .program-accordion-body--body {
         flex-direction: row;
         padding: 40px 0px 20px 0px; } }
+  .program-accordion-body .field__item {
+    color: #ffffff;
+    margin-bottom: 10px; }
   .program-accordion-body p {
     color: #ffffff; }
 
@@ -3132,6 +3135,10 @@ li.footer--copyright-li {
   @media (min-width: 768px) {
     .program-accordion-ctas {
       justify-content: flex-end; } }
+  .program-accordion-ctas .cta-left {
+    display: flex; }
+  .program-accordion-ctas .cta-right {
+    display: flex; }
   .program-accordion-ctas a:first-child {
     margin-right: 20px; }
 
@@ -3170,6 +3177,11 @@ li.footer--copyright-li {
 .program-cta--col.col-1 .program-cta--cta .field__item {
   display: flex; }
 
+.program-cta--col.col-1 .program-cta--text {
+  color: #000000; }
+  .program-cta--col.col-1 .program-cta--text p {
+    color: #000000; }
+
 @media (min-width: 576px) {
   .program-cta--col.col-2 {
     margin-top: -50px;
@@ -3192,13 +3204,15 @@ li.footer--copyright-li {
 .program-cta--col.col-2 .program-cta--cta .field__item {
   display: flex; }
 
+.program-cta--col.col-2 .program-cta--text {
+  color: #ffffff; }
+  .program-cta--col.col-2 .program-cta--text p {
+    color: #ffffff; }
+
 .program-cta--cta {
   display: flex;
   justify-content: center;
   margin-bottom: 30px; }
-
-.program-cta--text p {
-  color: #ffffff; }
 
 @media (min-width: 992px) {
   .program-option--item-wrap {

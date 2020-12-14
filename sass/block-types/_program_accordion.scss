@@ -144,6 +144,11 @@
       }
     }
 
+    .field__item {
+      color: $white;
+      margin-bottom: 10px;
+    }
+
     p {
       color: $white;
     }
@@ -189,6 +194,24 @@
 
     @include respond-above(md) {
       justify-content: flex-end;
+    }
+
+    .cta-left {
+      display: flex;
+
+      a {
+        @extend .btn;
+        @extend .btn--sea;
+      }
+    }
+
+    .cta-right {
+      display: flex;
+
+      a {
+        @extend .btn;
+        @extend .btn--sea;
+      }
     }
 
     a:first-child {
