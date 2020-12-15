@@ -41,7 +41,6 @@
 
 
     //Card-slider
-
     $('.card-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -53,7 +52,6 @@
 
 
     // Plain slider
-
     $('.plain-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -62,6 +60,19 @@
         prevArrow: $('.plain-left'),
         nextArrow: $('.plain-right'),
         dots: true,
+    });
+
+    // text Slider
+
+    $('.text-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
     });
 
 
