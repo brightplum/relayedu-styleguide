@@ -85,9 +85,7 @@
 
       &:last-child {
         .scattered-story--media {
-          @include respond-above(md) {
-            margin-left: 30%;
-          }
+          margin-left: 30px;
         }
         .scattered-story--text {
           background: $sea-foam;

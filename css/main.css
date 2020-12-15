@@ -3330,9 +3330,8 @@ li.footer--copyright-li {
 .scattered-story .col-2 .scattered-story--card:first-child .scattered-story--text {
   padding: 30px 30px 30px 0px; }
 
-@media (min-width: 768px) {
-  .scattered-story .col-2 .scattered-story--card:last-child .scattered-story--media {
-    margin-left: 30%; } }
+.scattered-story .col-2 .scattered-story--card:last-child .scattered-story--media {
+  margin-left: 30px; }
 
 .scattered-story .col-2 .scattered-story--card:last-child .scattered-story--text {
   background: #A8DADC;
