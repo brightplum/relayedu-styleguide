@@ -1,0 +1,83 @@
+.home-header {
+
+  h1 {
+    font-size: 3.1em;
+  }
+
+  .text-slider {
+    background: $crimson;
+    color: $white;
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    @include respond-above(sm) {
+      position: absolute;
+      z-index: 3;
+      width: 20%;
+      min-width: 245px;
+      padding-top: initial;
+      padding-bottom: initial;
+      top: 10%;
+    }
+
+    @include respond-above(lg) {
+      min-width: 400px;
+    }
+
+    &-item {
+      @include respond-above(sm) {
+        padding: 30px;
+      }
+    }
+  }
+
+  &--wrap {
+    position: relative;
+  }
+
+  &--media {
+    overflow: hidden;
+    min-height: 300px;
+    margin: -80px 10px 0px 10px;
+    position: relative;
+    z-index: 2;
+
+    @include respond-above(sm) {
+      margin: initial;
+      padding-left: 20%;
+    }
+  }
+
+  &--slide-text {
+    font-size: 3.1em;
+    font-family: Chronicle Display Light;
+
+    @include respond-above(lg) {
+      font-size: 5.6em;
+    }
+  }
+
+  .slick-dots {
+    position: relative;
+
+    @include respond-above(sm) {
+      bottom: 10px;
+    }
+  }
+
+  .slick-dotted.slick-slider {
+   margin-bottom: initial;
+  }
+
+  iframe {
+    min-height: 250px;
+
+    @include respond-above(sm) {
+      min-height: 350px;
+    }
+
+    @include respond-above(lg) {
+      min-height: 650px;
+    }
+  }
+}

@@ -28,6 +28,13 @@
   }
 }
 
+.container-no-sm {
+  @include respond-above(sm) {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
+
 .main-logo {
   overflow: hidden;
   display: none;
