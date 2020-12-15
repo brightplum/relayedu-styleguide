@@ -1,0 +1,109 @@
+.scattered-story {
+  &--text {
+    padding: 30px;
+  }
+
+  &--wrap {
+    @include respond-above(md) {
+      display: flex;
+    }
+
+    .scattered-story--card {
+      margin-bottom: 30px;
+    }
+  }
+
+  &--media {
+    img {
+      width: 100%;
+    }
+  }
+
+  .col-1 {
+    .scattered-story--card {
+      &:first-child {
+        @include respond-above(md) {
+          padding-top: 60%;
+          padding-bottom: 60%;
+        }
+
+        .scattered-story--media {
+          @include respond-above(md) {
+            width: 70%;
+          }
+        }
+
+        .scattered-story--text {
+          background: orange;
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-top: -60px;
+          z-index: 3;
+          position: relative;
+
+          @include respond-above(md) {
+            margin-right: 0px;
+            margin-left: 40px;
+          }
+        }
+      }
+
+      &:last-child {
+        @include respond-above(md) {
+          padding-left: 40px;
+        }
+
+        .scattered-story--media {
+          @include respond-above(md) {
+            width: 80%;
+          }
+        }
+
+        .scattered-story--text {
+          padding: 30px 0px;
+        }
+      }
+    }
+  }
+
+  .col-2 {
+    .scattered-story--card {
+      &:first-child {
+        @include respond-above(md) {
+          margin-bottom: 80px;
+        }
+
+        .scattered-story--media {
+          @include respond-above(md) {
+            width: 80%;
+          }
+        }
+        .scattered-story--text {
+          padding: 30px 30px 30px 0px;
+        }
+      }
+
+      &:last-child {
+        .scattered-story--media {
+          @include respond-above(md) {
+            margin-left: 30%;
+          }
+        }
+        .scattered-story--text {
+          background: $sea-foam;
+          padding-top: 180px;
+          margin-top: -150px;
+
+          @include respond-above(md) {
+            margin-top: -50px;
+            padding-top: 80px;
+            position: relative;
+            z-index: 3;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
