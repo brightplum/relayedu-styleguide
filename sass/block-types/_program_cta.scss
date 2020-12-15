@@ -50,6 +50,14 @@
           @extend .btn--primary;
         }
       }
+
+      .program-cta--text {
+        color: $black;
+
+        p {
+          color: $black;
+        }
+      }
     }
 
     &.col-2 {
@@ -84,6 +92,14 @@
           @extend .btn--white-celadon;
         }
       }
+
+      .program-cta--text {
+        color: $white;
+        
+        p {
+          color: $white;
+        }
+      }
     }
   }
 
@@ -93,9 +109,4 @@
     margin-bottom: 30px;
   }
 
-  &--text {
-    p {
-      color: $white;
-    }
-  }
 }
