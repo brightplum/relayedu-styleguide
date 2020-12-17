@@ -3603,3 +3603,82 @@ li.footer--copyright-li {
       .article-image-header--media:after {
         right: -15px;
         bottom: -15px; } }
+
+.article-stack--articles {
+  padding-top: 20px; }
+  @media (min-width: 768px) {
+    .article-stack--articles {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; } }
+
+.article-stack--item {
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .article-stack--item:nth-of-type(odd) {
+      margin-right: 30px; } }
+  @media (min-width: 768px) {
+    .article-stack--item:nth-of-type(even) {
+      margin-left: 30px; } }
+  @media (min-width: 768px) {
+    .article-stack--item {
+      flex: 1 0 40%; } }
+  .article-stack--item h6 {
+    font-size: 1.875em;
+    color: #ffffff;
+    line-height: 34px;
+    margin-bottom: inherit; }
+  .article-stack--item-media {
+    position: relative; }
+    .article-stack--item-media img {
+      min-height: 300px;
+      object-fit: cover;
+      width: 100%; }
+      @media (min-width: 576px) {
+        .article-stack--item-media img {
+          max-height: 350px; } }
+  .article-stack--item-title {
+    position: absolute;
+    padding: 20px;
+    bottom: 0px; }
+  .article-stack--item.item-1 .article-stack--item-text:after {
+    background: #FFAC5F; }
+  .article-stack--item.item-2 .article-stack--item-text:after {
+    background: #79B9ED; }
+  .article-stack--item.item-3 .article-stack--item-text:after {
+    background: #457B9D; }
+  .article-stack--item.item-4 .article-stack--item-text:after {
+    background: #CECECE; }
+  .article-stack--item.item-5 .article-stack--item-text:after {
+    background: #A8DADC; }
+  .article-stack--item.item-6 .article-stack--item-text:after {
+    background: #B30838; }
+  .article-stack--item-text {
+    background: #ffffff;
+    padding: 30px;
+    position: relative; }
+    .article-stack--item-text .sutitle {
+      text-transform: uppercase;
+      color: #457B9D;
+      font-size: 1em;
+      font-weight: 600;
+      padding: 10px 0px;
+      display: block; }
+    .article-stack--item-text:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 50px;
+      background: #B30838;
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      z-index: -1; }
+      @media (min-width: 768px) {
+        .article-stack--item-text:after {
+          right: -15px;
+          bottom: -15px;
+          width: 135px;
+          height: 100px; } }
