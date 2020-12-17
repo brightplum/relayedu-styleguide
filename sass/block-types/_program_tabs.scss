@@ -1,0 +1,130 @@
+.program-tabs {
+
+  &--headers {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &--headers-head {
+    background: $light-sea-foam;
+    padding: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+  &-tab {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  .select {
+    position: relative;
+  }
+  .select .selectBtn {
+    @include respond-below(md) {
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background: $light-sea-foam;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: $crimson;
+      font-weight: 500;
+      border-bottom: 4px solid $crimson;
+    }
+    @include respond-above(md) {
+      display: none;
+    }
+  }
+  .select .selectBtn:after {
+    @include respond-below(md) {
+      content: "";
+      position: absolute;
+      top: 45%;
+      right: 30px;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: translateY(-50%) rotate(45deg);
+      transform: translateY(-50%) rotate(45deg);
+      border-right: 2px solid $pacific;
+      border-bottom: 2px solid $pacific;
+      transition: 0.2s ease;
+    }
+  }
+  .select .selectBtn.toggle {
+    @include respond-below(md) {
+      border-radius: 3px 3px 0 0;
+    }
+  }
+  .select .selectBtn.toggle:after {
+    @include respond-below(md) {
+      -webkit-transform: translateY(-50%) rotate(-135deg);
+      transform: translateY(-50%) rotate(-135deg);
+    }
+  }
+  .select .selectDropdown {
+    @include respond-below(md) {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      border-radius: 0 0 3px 3px;
+      overflow: hidden;
+      z-index: 1;
+      background: #fff;
+      -webkit-transform: scale(1, 0);
+      transform: scale(1, 0);
+      -webkit-transform-origin: top center;
+      transform-origin: top center;
+      visibility: hidden;
+      transition: 0.2s ease;
+      left: 0;
+    }
+    @include respond-above(md) {
+      display: flex;
+    }
+  }
+  .select .selectDropdown .option {
+    cursor: pointer;
+    color: $pacific;
+
+    @include respond-below(md) {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    &.active {
+      @include respond-above(md) {
+        color: $crimson;
+        border-bottom: 4px solid $crimson;
+      }
+    }
+  }
+  .select .selectDropdown .option:hover {
+    background: $sea-foam;
+    color: $crimson;
+  }
+  .select .selectDropdown.toggle {
+    @include respond-below(md) {
+      visibility: visible;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+  }
+
+
+
+
+
+
+
+}
+
+

@@ -877,6 +877,26 @@ h6 {
     .container-sm {
       max-width: 1140px; } }
 
+@media (max-width: 767px) {
+  .container-md {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto; } }
+  @media (max-width: 767px) and (min-width: 576px) {
+    .container-md {
+      max-width: 540px; } }
+  @media (max-width: 767px) and (min-width: 768px) {
+    .container-md {
+      max-width: 720px; } }
+  @media (max-width: 767px) and (min-width: 992px) {
+    .container-md {
+      max-width: 960px; } }
+  @media (max-width: 767px) and (min-width: 1200px) {
+    .container-md {
+      max-width: 1140px; } }
+
 @media (min-width: 576px) {
   .container-no-sm {
     width: 100%;
@@ -3224,6 +3244,112 @@ li.footer--copyright-li {
   .program-option ul li:before {
     content: url("../images/icons/check-red.svg");
     margin-right: 10px; }
+
+.program-tabs--headers {
+  display: flex;
+  margin-bottom: 40px; }
+
+.program-tabs--headers-head {
+  background: rgba(168, 218, 220, 0.4);
+  padding: 20px;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.program-tabs-tab {
+  display: none; }
+  .program-tabs-tab.active {
+    display: block; }
+
+.program-tabs .select {
+  position: relative; }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectBtn {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(168, 218, 220, 0.4);
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #B30838;
+    font-weight: 500;
+    border-bottom: 4px solid #B30838; } }
+
+@media (min-width: 768px) {
+  .program-tabs .select .selectBtn {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #2C49A4;
+    border-bottom: 2px solid #2C49A4;
+    transition: 0.2s ease; } }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0; } }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+    transform: translateY(-50%) rotate(-135deg); } }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    left: 0; } }
+
+@media (min-width: 768px) {
+  .program-tabs .select .selectDropdown {
+    display: flex; } }
+
+.program-tabs .select .selectDropdown .option {
+  cursor: pointer;
+  color: #2C49A4; }
+  @media (max-width: 767px) {
+    .program-tabs .select .selectDropdown .option {
+      padding: 20px;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) {
+    .program-tabs .select .selectDropdown .option.active {
+      color: #B30838;
+      border-bottom: 4px solid #B30838; } }
+
+.program-tabs .select .selectDropdown .option:hover {
+  background: #A8DADC;
+  color: #B30838; }
+
+@media (max-width: 767px) {
+  .program-tabs .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
 .home-header h1 {
   font-size: 3.1em; }
