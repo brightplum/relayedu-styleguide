@@ -3576,3 +3576,30 @@ li.footer--copyright-li {
       background-repeat: no-repeat;
       background-position: center;
       color: #ffffff; }
+
+.article-image-header--wrap {
+  position: relative; }
+
+.article-image-header--media {
+  position: relative; }
+  .article-image-header--media img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .article-image-header--media img {
+        height: auto; } }
+  .article-image-header--media:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: #B30838;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1; }
+    @media (min-width: 576px) {
+      .article-image-header--media:after {
+        right: -15px;
+        bottom: -15px; } }
