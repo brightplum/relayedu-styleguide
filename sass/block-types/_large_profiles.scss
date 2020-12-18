@@ -25,6 +25,43 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &.small {
+      margin: 0px -15px;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .large-profiles--profile {
+        min-width: 310px;
+        flex: 1;
+        margin: 15px;
+      }
+
+      .large-profiles--profile-box {
+        display: flex;
+        background: $fog;
+      }
+
+      .large-profiles--profile-media {
+        width: 30%;
+        min-width: 124px;
+        max-width: 124px;
+
+        img {
+          min-height: 162px;
+          object-fit: cover;
+        }
+      }
+
+      .large-profiles--profile-text {
+        width: 70%;
+        text-align: left;
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+      }
+    }
   }
 
   &--text {
@@ -88,8 +125,8 @@
         display: flex;
       }
     }
-  }
 
+  }
 
   &--bio {
     &-media {

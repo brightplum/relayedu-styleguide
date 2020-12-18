@@ -3732,6 +3732,31 @@ li.footer--copyright-li {
     .large-profiles--profiles {
       display: flex;
       justify-content: space-between; } }
+  .large-profiles--profiles.small {
+    margin: 0px -15px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .large-profiles--profiles.small .large-profiles--profile {
+      min-width: 310px;
+      flex: 1;
+      margin: 15px; }
+    .large-profiles--profiles.small .large-profiles--profile-box {
+      display: flex;
+      background: #F7F7F7; }
+    .large-profiles--profiles.small .large-profiles--profile-media {
+      width: 30%;
+      min-width: 124px;
+      max-width: 124px; }
+      .large-profiles--profiles.small .large-profiles--profile-media img {
+        min-height: 162px;
+        object-fit: cover; }
+    .large-profiles--profiles.small .large-profiles--profile-text {
+      width: 70%;
+      text-align: left;
+      padding: 30px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center; }
   .large-profiles--text {
     color: #000000;
     line-height: 21px; }
