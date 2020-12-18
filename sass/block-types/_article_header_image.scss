@@ -1,9 +1,9 @@
 .article-image-header {
-  &--wrap {
+  &--wrap, .field--name-field-media-imag {
     position: relative;
   }
 
-  &--media {
+  &--media, .field__item {
     position: relative;
 
     img {
