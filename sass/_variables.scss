@@ -1,6 +1,7 @@
 $p-font-stack: Proxima Nova Regular;
 $h-font-stack: Chronicle Display Light;
 
+$greyer: #CECECE;
 $grey: #dad8d8;
 $black: #000000;
 $fog: #F7F7F7;
@@ -10,6 +11,7 @@ $imperial-red: #E63946;
 $orange: #FFAC5F;
 $light-orange: transparentize($orange, 0.8);
 $sea-foam: #A8DADC;
+$light-sea-foam: transparentize($sea-foam, 0.6);
 $sky-blue: #79B9ED;
 $light-blue: transparentize($sky-blue, 0.8);
 $pacific: #2C49A4;
