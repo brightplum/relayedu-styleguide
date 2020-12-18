@@ -1,0 +1,28 @@
+.page-node-type-article {
+
+  .field--name-field-category {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $celadon;
+    font-size: 1em;
+    line-height: 19px;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  .field--name-title {
+    @extend h1;
+    color: $crimson;
+  }
+
+  .field--name-field-publish-date {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 1em;
+    line-height: 19px;
+    padding: 10px 0px 80px 0px;
+    display: block;
+  }
+
+}

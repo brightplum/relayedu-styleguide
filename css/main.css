@@ -23,7 +23,8 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+.page-node-type-article .field--name-title, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -666,7 +667,9 @@ figcaption {
 .main {
   position: relative; }
 
-h1 {
+
+h1,
+.page-node-type-article .field--name-title {
   font-family: Chronicle Display Light;
   font-style: normal;
   font-weight: 300;
@@ -674,7 +677,9 @@ h1 {
   line-height: 96px;
   margin-bottom: 20px; }
   @media (min-width: 576px) {
-    h1 {
+    
+    h1,
+    .page-node-type-article .field--name-title {
       font-size: 5.6em; } }
 
 h2 {
@@ -1952,7 +1957,7 @@ li.footer--copyright-li {
       .card-image::before {
         margin-left: -20%;
         width: 70%; } }
-  .card-image h1 {
+  .card-image h1, .card-image .page-node-type-article .field--name-title, .page-node-type-article .card-image .field--name-title {
     margin: 0px 15px; }
   @media (max-width: 767px) {
     .card-image.container {
@@ -3351,7 +3356,7 @@ li.footer--copyright-li {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); } }
 
-.home-header h1 {
+.home-header h1, .home-header .page-node-type-article .field--name-title, .page-node-type-article .home-header .field--name-title {
   font-size: 3.1em; }
 
 .home-header .text-slider {
@@ -3577,19 +3582,19 @@ li.footer--copyright-li {
       background-position: center;
       color: #ffffff; }
 
-.article-image-header--wrap {
+.article-image-header--wrap, .article-image-header .field--name-field-media-imag {
   position: relative; }
 
-.article-image-header--media {
+.article-image-header--media, .article-image-header .field__item {
   position: relative; }
-  .article-image-header--media img {
+  .article-image-header--media img, .article-image-header .field__item img {
     object-fit: cover;
     height: 200px;
     width: 100%; }
     @media (min-width: 576px) {
-      .article-image-header--media img {
+      .article-image-header--media img, .article-image-header .field__item img {
         height: auto; } }
-  .article-image-header--media:after {
+  .article-image-header--media:after, .article-image-header .field__item:after {
     content: '';
     display: block;
     width: 200px;
@@ -3600,7 +3605,7 @@ li.footer--copyright-li {
     bottom: -10px;
     z-index: -1; }
     @media (min-width: 576px) {
-      .article-image-header--media:after {
+      .article-image-header--media:after, .article-image-header .field__item:after {
         right: -15px;
         bottom: -15px; } }
 
@@ -3682,3 +3687,24 @@ li.footer--copyright-li {
           bottom: -15px;
           width: 135px;
           height: 100px; } }
+
+.page-node-type-article .field--name-field-category {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #457B9D;
+  font-size: 1em;
+  line-height: 19px;
+  padding-bottom: 20px;
+  display: block; }
+
+.page-node-type-article .field--name-title {
+  color: #B30838; }
+
+.page-node-type-article .field--name-field-publish-date {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 1em;
+  line-height: 19px;
+  padding: 10px 0px 80px 0px;
+  display: block; }
