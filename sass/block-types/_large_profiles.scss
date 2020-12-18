@@ -1,0 +1,159 @@
+.large-profiles {
+  background: $light-orange;
+  position: relative;
+
+  @include respond-above(md) {
+    background: none;
+  }
+
+  &:before {
+    @include respond-above(md) {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 100%;
+      background: $light-orange;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+  }
+
+  &--profiles {
+    @include respond-above(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--text {
+    color: $black;
+    line-height: 21px;
+  }
+
+  &--profile {
+    padding-bottom: 60px;
+
+    @include respond-above(md) {
+      padding-bottom: initial;
+      width: 30%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &-media {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      text-align: center;
+
+      h5 {
+        color: $celadon;
+        margin-bottom: initial;
+        font-size: 1.875em;
+      }
+
+      .subtitle {
+        text-transform: uppercase;
+        color: $crimson;
+        font-size: 1em;
+        font-weight: 600;
+        display: block;
+        letter-spacing: 1px;
+      }
+    }
+
+    &-wrap {
+      h3 {
+        color: $celadon;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        color: $crimson;
+      }
+    }
+
+    &-bio {
+      padding-top: 40px;
+
+      @include respond-above(md) {
+        display: flex;
+      }
+    }
+  }
+
+
+  &--bio {
+    &-media {
+      position: relative;
+      z-index: 1;
+
+      &-wrap {
+        @include respond-above(md) {
+          width: 30%;
+        }
+      }
+
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &:before {
+        content: "";
+        width: 120px;
+        height: 100px;
+        background: $orange;
+        display: block;
+        position: absolute;
+        right: -7px;
+        top: 20%;
+        z-index: -1;
+
+        @include respond-above(md) {
+          right: -20px;
+          height: 95px;
+        }
+
+      }
+
+      &:after {
+        content: "";
+        width: 80px;
+        height: 100px;
+        background: $sea-foam;
+        display: block;
+        position: absolute;
+        left: -7px;
+        bottom: -4px;
+        z-index: -1;
+
+        @include respond-above(md) {
+          left: -20px;
+          height: 95px;
+          width: 120px;
+          bottom: -20px;
+        }
+
+      }
+    }
+
+    &-text {
+      padding-top: 40px;
+
+      @include respond-above(md) {
+        width: 70%;
+        padding: 0px 0px 0px 60px;
+      }
+    }
+  }
+
+}

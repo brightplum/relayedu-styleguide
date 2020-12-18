@@ -178,6 +178,14 @@ figcaption {
   color: $prussian;
 }
 
+.subtitle {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  display: block;
+  letter-spacing: 1px;
+}
+
 
 .full-width {
   margin: 0 calc((100% - 100vw)/2);
