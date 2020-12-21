@@ -49,10 +49,16 @@
 
 
 .card-slider {
+  position: relative;
+
   &.container {
     @include respond-below(sm) {
       padding: initial;
     }
+  }
+
+  &--wrap {
+    position: relative;
   }
 
   .col-1 {
@@ -89,6 +95,17 @@
     img {
       position: relative;
       z-index: 2;
+      height: 270px;
+      object-fit: cover;
+
+      @include respond-above(md) {
+        height: 350px;
+      }
+
+      @include respond-above(lg) {
+        min-height: 574px;
+        height: auto;
+      }
     }
 
     &-title {
@@ -139,17 +156,29 @@
     &-controls {
       position: absolute;
       right: 10px;
-      bottom: 0px;
+      top: 235px;
       z-index: 3;
 
       @include respond-above(sm) {
-        bottom: 0px;
         right: 40px;
+      }
+
+      @include respond-above(md) {
+        top: 315px;
       }
 
       @include respond-above(lg) {
         right: 0px;
         bottom: 10px;
+        top: auto;
+        left: 62%;
+      }
+
+      @include respond-above(xl) {
+        right: 0px;
+        bottom: 10px;
+        top: auto;
+        left: 63.3%;
       }
     }
   }

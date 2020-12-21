@@ -592,7 +592,8 @@ p {
   line-height: 34px;
   letter-spacing: 0.315px;
   font-size: 1.3em;
-  color: black; }
+  color: black;
+  margin-bottom: 1.2em; }
 
 .bullets li, .paragraph ul li {
   font-size: 21px;
@@ -1920,7 +1921,7 @@ li.footer--copyright-li {
   border-top-right-radius: 3px;
   bottom: 0;
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.15);
-  left: 5em;
+  left: 6em;
   margin-bottom: 0;
   padding: 5px;
   position: fixed;
@@ -1959,6 +1960,15 @@ li.footer--copyright-li {
       .block-local-tasks-block ul.tabs a:visited:hover,
       .block-local-tasks-block ul.tabs a:visited:focus {
         border-color: #2C49A4; }
+
+.layout-builder-form #edit-actions {
+  position: fixed;
+  top: 30px;
+  left: 3em;
+  z-index: 4; }
+
+#drupal-off-canvas .inline-block-list__item {
+  color: white; }
 
 .card-image {
   position: relative;
@@ -2237,96 +2247,114 @@ li.footer--copyright-li {
     color: #ffffff;
     font-size: 8px; }
 
-@media (max-width: 575px) {
-  .card-slider.container {
-    padding: initial; } }
-
-@media (min-width: 992px) {
-  .card-slider .col-1 {
-    width: 70%;
-    padding: 10px 0px 10px 10px; } }
-
-@media (min-width: 992px) {
-  .card-slider .col-2 {
-    width: 45%;
-    position: absolute;
-    bottom: 14%;
-    right: 0px;
-    z-index: 3;
-    padding: 40px 20px; } }
-
-.card-slider .card-slide {
+.card-slider {
   position: relative; }
-
-.card-slider--image {
-  padding: 0px 10px;
-  position: relative; }
-  @media (min-width: 576px) {
-    .card-slider--image {
-      padding: 0px 40px; } }
-  .card-slider--image img {
-    position: relative;
-    z-index: 2; }
-  .card-slider--image-title {
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    z-index: 3; }
+  @media (max-width: 575px) {
+    .card-slider.container {
+      padding: initial; } }
+  .card-slider--wrap {
+    position: relative; }
+  @media (min-width: 992px) {
+    .card-slider .col-1 {
+      width: 70%;
+      padding: 10px 0px 10px 10px; } }
+  @media (min-width: 992px) {
+    .card-slider .col-2 {
+      width: 45%;
+      position: absolute;
+      bottom: 14%;
+      right: 0px;
+      z-index: 3;
+      padding: 40px 20px; } }
+  .card-slider .card-slide {
+    position: relative; }
+  .card-slider--image {
+    padding: 0px 10px;
+    position: relative; }
     @media (min-width: 576px) {
-      .card-slider--image-title {
-        bottom: 10px;
-        left: 60px; } }
-    @media (min-width: 992px) {
-      .card-slider--image-title {
-        bottom: 20px;
-        left: 30px; } }
-    .card-slider--image-title h4 {
-      font-size: 1.8em;
+      .card-slider--image {
+        padding: 0px 40px; } }
+    .card-slider--image img {
+      position: relative;
+      z-index: 2;
+      height: 270px;
+      object-fit: cover; }
+      @media (min-width: 768px) {
+        .card-slider--image img {
+          height: 350px; } }
+      @media (min-width: 992px) {
+        .card-slider--image img {
+          min-height: 574px;
+          height: auto; } }
+    .card-slider--image-title {
+      position: absolute;
+      bottom: 10px;
+      left: 30px;
+      z-index: 3; }
+      @media (min-width: 576px) {
+        .card-slider--image-title {
+          bottom: 10px;
+          left: 60px; } }
+      @media (min-width: 992px) {
+        .card-slider--image-title {
+          bottom: 20px;
+          left: 30px; } }
+      .card-slider--image-title h4 {
+        font-size: 1.8em;
+        color: #ffffff; }
+        @media (max-width: 767px) {
+          .card-slider--image-title h4 {
+            font-size: 1.8em; } }
+    .card-slider--image-square {
+      width: 60px;
+      height: 60px;
+      background: #FFAC5F;
+      position: absolute;
+      left: 5px;
+      bottom: -4px;
+      z-index: 1; }
+      @media (min-width: 576px) {
+        .card-slider--image-square {
+          bottom: -5px;
+          left: 34px; } }
+      @media (min-width: 992px) {
+        .card-slider--image-square {
+          bottom: 0px;
+          left: 0px; } }
+    .card-slider--image-controls {
+      position: absolute;
+      right: 10px;
+      top: 235px;
+      z-index: 3; }
+      @media (min-width: 576px) {
+        .card-slider--image-controls {
+          right: 40px; } }
+      @media (min-width: 768px) {
+        .card-slider--image-controls {
+          top: 315px; } }
+      @media (min-width: 992px) {
+        .card-slider--image-controls {
+          right: 0px;
+          bottom: 10px;
+          top: auto;
+          left: 62%; } }
+      @media (min-width: 1200px) {
+        .card-slider--image-controls {
+          right: 0px;
+          bottom: 10px;
+          top: auto;
+          left: 63.3%; } }
+  .card-slider--text {
+    padding: 60px 30px 30px 30px;
+    margin-top: -30px; }
+    .card-slider--text h2 {
       color: #ffffff; }
       @media (max-width: 767px) {
-        .card-slider--image-title h4 {
-          font-size: 1.8em; } }
-  .card-slider--image-square {
-    width: 60px;
-    height: 60px;
-    background: #FFAC5F;
-    position: absolute;
-    left: 5px;
-    bottom: -4px;
-    z-index: 1; }
-    @media (min-width: 576px) {
-      .card-slider--image-square {
-        bottom: -5px;
-        left: 34px; } }
-    @media (min-width: 992px) {
-      .card-slider--image-square {
-        bottom: 0px;
-        left: 0px; } }
-  .card-slider--image-controls {
-    position: absolute;
-    right: 10px;
-    bottom: 0px;
-    z-index: 3; }
-    @media (min-width: 576px) {
-      .card-slider--image-controls {
-        bottom: 0px;
-        right: 40px; } }
-    @media (min-width: 992px) {
-      .card-slider--image-controls {
-        right: 0px;
-        bottom: 10px; } }
-
-.card-slider--text {
-  padding: 60px 30px 30px 30px;
-  margin-top: -30px; }
-  .card-slider--text h2 {
-    color: #ffffff; }
-    @media (max-width: 767px) {
-      .card-slider--text h2 {
-        font-size: 2.5em;
-        line-height: 40px; } }
-  .card-slider--text p {
-    color: #ffffff; }
+        .card-slider--text h2 {
+          font-size: 2.5em;
+          line-height: 40px; } }
+    .card-slider--text p {
+      color: #ffffff; }
 
 .explore-programs {
   display: flex;
