@@ -675,6 +675,36 @@ figcaption {
 .main {
   position: relative; }
 
+.pager__item {
+  padding: 3px;
+  color: #B30838; }
+  .pager__item.is-active a {
+    background: #B30838;
+    color: #ffffff;
+    border: 1px solid #B30838; }
+  .pager__item.pager__item--last, .pager__item.pager__item--first {
+    display: none; }
+  .pager__item.pager__item--previous a {
+    background: url("../images/icons/pointer-left.svg") no-repeat center;
+    padding: 10px 19px;
+    background-size: 20%; }
+    .pager__item.pager__item--previous a span {
+      text-indent: -1000px;
+      display: block; }
+  .pager__item.pager__item--next a {
+    background: url("../images/icons/pointer-right.svg") no-repeat center;
+    padding: 10px 19px;
+    background-size: 20%; }
+    .pager__item.pager__item--next a span {
+      text-indent: -1000px;
+      display: block; }
+  .pager__item a {
+    padding: 10px 15px;
+    border: 1px solid #B30838;
+    color: #B30838;
+    text-decoration: none;
+    display: inline-block; }
+
 
 h1,
 .page-node-type-article .field--name-title {
